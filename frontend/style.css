@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #0a0707;
+  color: #fff;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.header .logo {
+  margin: 20px 60px;
+  color: coral;
+  font-weight: bold;
+  font-size: 22px;
+  font-family: serif;
+}
+
+.header .logo:hover {
+  transform: scale(1.1);
+  transition: 0.4s;
+  cursor: default;
+}
+
+.header .links {
+  display: flex;
+  gap: 20px;
+  margin: 20px 80px;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.header .links li {
+  list-style: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.header .links li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.header .links li a {
+  text-decoration: none;
+  color: cadetblue;
+}
+
+.header .links li a.active {
+  color: burlywood;
+}
+
+.header .menu-icon {
+  display: none;
+}
+
+.section {
+  padding: 140px 40px 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.section .image {
+  background-image: url("/frontend/images/image_0a0707_bg_color.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  width: 350px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.section .content {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section .content h1 {
+  font-size: 36px;
+  color: burlywood;
+}
+
+.section .content h2 {
+  font-size: 28px;
+  color: burlywood;
+}
+
+.section .content span {
+  color: cadetblue;
+}
+
+.section .content p {
+  color: #ccc;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+#typing-text {
+  border-right: 3px solid cadetblue;
+  animation: blink 0.9s step-end infinite;
+}
+
+.section .content .socialmedia-icon {
+  font-size: 18px;
+  display: flex;
+  gap: 10px;
+}
+
+.section .content .socialmedia-icon a {
+  color: cadetblue;
+  border: 1px solid cadetblue;
+  border-radius: 50%;
+  padding: 8px;
+  transition: transform 0.3s;
+}
+
+.section .content .socialmedia-icon a:hover {
+  transform: scale(1.1);
+}
+
+.section .content .btn {
+  background-color: coral;
+  color: #242424;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 24px;
+  width: fit-content;
+  cursor: pointer;
+  transition: transform 0.1s ease, background-color 0.3s;
+}
+
+.section .content .btn:active {
+  transform: scale(0.87);
+}
+
+.section .content .btn:hover {
+  background-color: burlywood;
+}
+
+.section .content .btn a {
+  text-decoration: none;
+}
+
+@keyframes blink {
+  0%,
+  49% {
+    border-color: cadetblue;
+  }
+  50%,
+  100% {
+    border-color: transparent;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    flex-direction: column;
+    padding: 100px 20px 20px;
+  }
+
+  .section .image {
+    height: 230px;
+    width: 60%;
+  }
+
+  .section .content h1 {
+    font-size: 24px;
+  }
+
+  .section .content h2 {
+    font-size: 20px;
+  }
+
+  .section .content p {
+    font-size: 14px;
+  }
+
+  .section .content .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    align-items: stretch;
+    justify-content: space-between;
+  }
+
+  .header .logo {
+    font-size: 14px;
+    margin: 20px;
+  }
+
+  .header .links {
+    display: none;
+  }
+
+  .header .menu-icon {
+    display: flex;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 20px;
+    color: cadetblue;
+  }
+
+  .mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.431);
+    backdrop-filter: blur(2px);
+    z-index: 999;
+    padding: 60px 20px 20px;
+  }
+
+  .mobile-menu.active {
+    display: block;
+  }
+
+  .close-icon {
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    color: cadetblue;
+    text-align: right;
+  }
+
+  .mobile-nav {
+    padding: 0;
+    text-align: left;
+    margin-top: 50px;
+  }
+
+  .mobile-nav li {
+    margin: 20px 0;
+    font-size: 1.2rem;
+    list-style: none;
+    font-weight: bold;
+  }
+
+  .mobile-nav hr {
+    border: none;
+    border-top: 1px solid #555;
+    margin: 10px 0;
+  }
+
+  .mobile-nav a {
+    color: cadetblue;
+    text-decoration: none;
+  }
+
+  .mobile-nav a.active {
+    color: burlywood;
+  }
+}

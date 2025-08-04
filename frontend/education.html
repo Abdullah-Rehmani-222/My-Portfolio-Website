@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- For ICO file -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/frontend/images/favicon_io/favicon.ico"
+    />
+
+    <!-- For PNG file -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="/frontend/images/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="education.css" />
+    <title>ABDULLAH REHMANI | EDUCATION</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">ABDULLAH REHMANI</div>
+
+      <ul class="links">
+        <li><a href="/frontend/index.html" data-page="home">Home</a></li>
+        <li><a href="/frontend/skills.html" data-page="skills">Skills</a></li>
+        <li><a href="/frontend/education.html" data-page="education">Education</a></li>
+        <li><a href="/frontend/contact.html" data-page="contact">Contact</a></li>
+        <li><a href="/frontend/about.html" data-page="about">About</a></li>
+      </ul>
+
+      <span class="menu-icon" id="menuIcon" onclick="toggleMobileMenu()">/frontend
+        <i class="fa-solid fa-bars"></i>
+      </span>
+    </header>
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="close-icon" onclick="toggleMobileMenu()">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <ul class="mobile-nav">
+        <li><a href="/frontend/index.html" data-page="home">Home</a></li>
+        <hr />
+        <li><a href="/frontend/skills.html" data-page="skills">Skills</a></li>
+        <hr />
+        <li><a href="/frontend/education.html" data-page="education">Education</a></li>
+        <hr />
+        <li><a href="/frontend/contact.html" data-page="contact">Contact</a></li>
+        <hr />
+        <li><a href="/frontend/about.html" data-page="about">About</a></li>
+        <hr />
+      </ul>
+    </div>
+
+    <section class="education-section">
+      <h2 class="section-title">Education</h2>
+      <p class="education-subtitle">Here is my qualification</p>
+      <div class="education-grid">
+        <div class="education-card">
+          <h3 class="degree">Matriculation in Computer Science</h3>
+          <p class="institute">Sir Syed Children School, Karachi</p>
+          <p class="year">2021 – 2023</p>
+        </div>
+        <div class="education-card">
+          <h3 class="degree">Intermediate in Computer Science</h3>
+          <p class="institute">Govt. Degree College 5L, Karachi</p>
+          <p class="year">2023 – 2025</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="skills.js"></script>
+  </body>
+</html>

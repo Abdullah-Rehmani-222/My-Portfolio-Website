@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  /* background-color: #140f0f; */
+  background-color: #0a0707;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.education-section {
+  position: absolute; /* or fixed, depending on desired behavior */
+  top: 44%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px 20px;
+  /* background-color: #f8f9fa; */
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  /* color: #f39c12; Soft Orange */
+  color: #a4c561;
+}
+
+.education-subtitle {
+  font-size: 20px;
+  color: #7f8c8d; /* Muted Gray */
+  margin-bottom: 30px;
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.education-card {
+  margin-top: 10px;
+  background: rgba(255, 255, 255, 0.05); /* Light translucent background */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Soft border */
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.1); /* Soft glowing shadow */
+  color: #ffffff;
+  cursor: default;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
+}
+
+.degree {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #00ffff;
+}
+
+.institute {
+  color: #ccc;
+  margin: 8px 0;
+}
+
+.year {
+  color: #007bff;
+  font-weight: 500;
+}
+
+@media (max-width: 500px) {
+  /* body{
+        display: none;
+    } */
+
+  .education-grid {
+    grid-template-columns: repeat(2, 3fr);
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .education-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}

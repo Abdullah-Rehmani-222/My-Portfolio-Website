@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- For ICO file -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/frontend/images/favicon_io/favicon.ico"
+    />
+
+    <!-- For PNG file -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="/frontend/images/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="about.css" />
+    <title>ABDULLAH REHMANI | ABOUT</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">ABDULLAH REHMANI</div>
+
+      <ul class="links">
+        <li><a href="/frontend/index.html" data-page="home">Home</a></li>
+        <li><a href="/frontend/skills.html" data-page="skills">Skills</a></li>
+        <li><a href="/frontend/education.html" data-page="education">Education</a></li>
+        <li>
+          <a
+            href="/frontend/contact.html"
+            data-page="contact"
+            onclick="if(location.pathname === '/contact.html') location.reload()"
+            >Contact</a
+          >
+        </li>
+        <li><a href="/frontend/about.html" data-page="about">About</a></li>
+      </ul>
+
+      <span class="menu-icon" id="menuIcon" onclick="toggleMobileMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </span>
+    </header>
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="close-icon" onclick="toggleMobileMenu()">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <ul class="mobile-nav">
+        <li><a href="/frontend/index.html" data-page="home">Home</a></li>
+        <hr />
+        <li><a href="/frontend/skills.html" data-page="skills">Skills</a></li>
+        <hr />
+        <li><a href="/frontend/education.html" data-page="education">Education</a></li>
+        <hr />
+        <li><a href="/frontend/contact.html" data-page="contact">Contact</a></li>
+        <hr />
+        <li><a href="/frontend/about.html" data-page="about">About</a></li>
+        <hr />
+      </ul>
+    </div>
+
+    <section class="about-section">
+      <div class="container">
+        <h2>About Me</h2>
+        <div class="about-grid">
+          <div class="about-img">
+            <img src="/frontend/images/image_0a0707_bg_color.png" alt="Abdullah Rehmani" />
+          </div>
+          <div class="about-text">
+            <h3>Hello! I’m Abdullah Rehmani</h3>
+            <p>
+              I’m a passionate Web Developer from Pakistan with 3+ years of
+              experience in Frontend Development. I specialize in building
+              responsive, user-friendly websites using HTML, CSS, JavaScript, React
+              and Tailwind CSS. I'm also a freelancer delivering high-quality
+              projects for clients.
+            </p>
+            <a href="/frontend/frontend/contact.html" class="btn">Hire Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="contact.js"></script>
+  </body>
+</html>
