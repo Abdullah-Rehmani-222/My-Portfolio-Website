@@ -15,17 +15,14 @@ Thumbs.db
 .vscode/
 *.swp
 
-# Optional: logs or future builds
->>>>>>> 8795a60 (first commit)
+# Optional: logs or future builds 
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-<<<<<<< HEAD
 lerna-debug.log*
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
-report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
 # Runtime data
 pids
@@ -160,4 +157,4 @@ vite.config.ts.timestamp-*
 # Optional: if you add a dist or build folder later
 /dist/
 /build/
->>>>>>> 8795a60 (first commit)
+
