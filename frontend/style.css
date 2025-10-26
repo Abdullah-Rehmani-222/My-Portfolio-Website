@@ -26,7 +26,11 @@ body {
   font-weight: bold;
   letter-spacing: 2px;
   animation: fade 1.5s ease-in-out infinite alternate;
-  background: linear-gradient(to right, rgb(94, 76, 158) 20%, rgb(113, 180, 202));
+  background: linear-gradient(
+    to right,
+    rgb(94, 76, 158) 20%,
+    rgb(113, 180, 202)
+  );
   /* color: lightblue; */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -238,6 +242,10 @@ body {
 }
 
 @media (max-width: 600px) {
+  #spinner {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+  }
   .header {
     align-items: stretch;
     justify-content: space-between;
