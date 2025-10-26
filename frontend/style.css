@@ -13,6 +13,35 @@ body {
   position: relative;
 }
 
+#loader {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#spinner {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  animation: fade 1.5s ease-in-out infinite alternate;
+  background: linear-gradient(to right, rgb(94, 76, 158) 20%, rgb(113, 180, 202));
+  /* color: lightblue; */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@keyframes fade {
+  from {
+    opacity: 0.2;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -84,7 +113,7 @@ body {
 }
 
 .section .image {
-  background-image: url("/frontend/images/image_0a0707_bg_color.png");
+  background-image: url("images/image_0a0707_bg_color.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

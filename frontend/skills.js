@@ -1,4 +1,17 @@
+let loader = document.getElementById("loader")
 
+window.addEventListener("load", () => {
+  // Show loader immediately (optional)
+  loader.style.display = "flex";
+   document.getElementById("header").style.display = "none"
+   document.getElementById("skills").style.display = "none"
+   // Hide loader after 4 seconds
+   setTimeout(() => {
+     loader.style.display = "none";
+     document.getElementById("header").style.display = "flex"
+     document.getElementById("skills").style.display = "block"
+  }, 2500);
+});
 // Logic for Navbar Menu to show in Mobile:
 function toggleMobileMenu() {
   document.getElementById("mobileMenu").classList.toggle("active");

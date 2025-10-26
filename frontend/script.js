@@ -1,3 +1,19 @@
+let loader = document.getElementById("loader")
+
+window.addEventListener("load", () => {
+  // Show loader immediately (optional)
+  loader.style.display = "flex";
+   document.getElementById("header").style.display = "none"
+   document.getElementById("section").style.display = "none"
+   // Hide loader after 4 seconds
+   setTimeout(() => {
+     loader.style.display = "none";
+     document.getElementById("header").style.display = "flex"
+     document.getElementById("section").style.display = "flex"
+  }, 2500);
+});
+
+
 // Logic for Dynamic Typing:
 const words = ["Web Developer.", "Web Designer.", "Freelancer."];
 const dynamicText = document.getElementById("typing-text");
@@ -73,6 +89,5 @@ links.forEach((link) => {
   });
 });
 
-  
 
 

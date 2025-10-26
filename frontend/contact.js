@@ -1,3 +1,17 @@
+let loader = document.getElementById("loader")
+
+window.addEventListener("load", () => {
+  // Show loader immediately (optional)
+  loader.style.display = "flex";
+   document.getElementById("header").style.display = "none"
+   document.getElementById("contact").style.display = "none"
+   // Hide loader after 4 seconds
+   setTimeout(() => {
+     loader.style.display = "none";
+     document.getElementById("header").style.display = "flex"
+     document.getElementById("contact").style.display = "block"
+  }, 2500);
+});
 
 // Logic for Navbar Menu to show in Mobile:
 function toggleMobileMenu() {
@@ -8,6 +22,7 @@ function toggleMobileMenu() {
 // Set 'active' class based on current page URL
 const links = document.querySelectorAll("a[data-page]");
 const currentPath = window.location.pathname;
+console.log(links);
 
 links.forEach((link) => {
     const linkPath = new URL(link.href).pathname;
