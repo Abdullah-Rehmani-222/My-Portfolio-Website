@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  /* background-color: #140f0f; */
+  background-color: #0a0707;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.project-section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px 20px;
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+
+.project-section h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: #00ffff;
+  margin-bottom: 15px;
+}
+
+.project-section .project-subtitle {
+  font-size: 20px;
+  color: #7f8c8d;
+  margin-bottom: 30px;
+}
+
+.project-section .project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; 
+  gap: 30px;
+  width: 100%;
+  /* background-color: #fff; */
+}
+
+.project-grid .project-card {
+  background-color: #111;
+  border: 1px solid #333;
+  border-radius: 20px;
+  padding: 20px;
+  cursor: default;
+  width: 400px;
+  text-align: center;
+  transition: transform 0.4s ease;
+}
+
+.project-grid .project-card:hover {
+  transform: scale(1.1);
+}
+
+.project-card .card-image {
+  height: 200px;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.project-card .card-title {
+  color: yellow;
+  margin-bottom: 10px;
+}
+
+.project-card .card-description {
+  color: white;
+}
+
+@media (max-width: 800px) {
+  .project-section {
+    padding: 20px 20px;
+    height: 100%;
+    top: 60%;
+  }
+
+  .project-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+
+  .project-section .project-subtitle {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .project-section .project-grid {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .project-grid .project-card {
+    width: 300px;
+  }
+
+  .project-card .card-image {
+    height: 150px;
+    width: 250px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+}
+
+@media  (min-width: 801px) and (max-width: 1350px) {
+  .project-section {
+    height: 100%;
+    top: 60%;
+  } 
+}
