@@ -1,18 +1,3 @@
-let loader = document.getElementById("loader")
-
-window.addEventListener("load", () => {
-  // Show loader immediately (optional)
-  loader.style.display = "flex";
-   document.getElementById("header").style.display = "none"
-   document.getElementById("section").style.display = "none"
-   // Hide loader after 4 seconds
-   setTimeout(() => {
-     loader.style.display = "none";
-     document.getElementById("header").style.display = "flex"
-     document.getElementById("section").style.display = "flex"
-  }, 2500);
-});
-
 
 // Logic for Dynamic Typing:
 const words = ["Web Developer.", "Web Designer.", "Freelancer."];
@@ -56,38 +41,4 @@ function toggleMobileMenu() {
   document.getElementById("mobileMenu").classList.toggle("active");
   document.getElementById("menuIcon").classList.toggle("active");
 }
-
-//Navabr link active logic for both computer and mobile layout:
-let links = document.querySelectorAll("a");
-console.log(links);
-
-
-const savedPage = localStorage.getItem("activePage");
-
-if (savedPage) {
-  links.forEach((link) => {
-    if (link.dataset.page === savedPage) {
-      link.classList.add("active");
-    }
-  });
-}
-
-links.forEach((link) => {
- console.log("links:",link);
- 
-  link.addEventListener("click", (e) => {
-    console.log("Clicked link:",e.target);
-    
-    links.forEach((item) => {
-      item.classList.remove("active");
-    });
-   
-    link.classList.add("active");
-    // e.target.classList.add("active"); //above code work same like this code
-
-    localStorage.setItem("activePage", link.dataset.page);
-  });
-});
-
-
 

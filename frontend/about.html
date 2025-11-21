@@ -20,88 +20,147 @@
     <link
       rel="icon"
       type="image/png"
+      href="images/favicon_io/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
       href="images/favicon_io/favicon-32x32.png"
     />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="about.css" />
   </head>
   <body>
-    <div id="loader">
-      <h1 id="spinner">Abdullah Rehmani</h1>
-    </div>
-
     <header id="header" class="header">
-      <div class="logo">ABDULLAH REHMANI</div>
+      <div id="logo">
+        <img class="logo-img" src="images/logo.png" alt="" />
+        <a class="title-container" href="index.html">
+          <h1 id="title">ABDULLAH REHMANI</h1>
+          <h3 id="sub-title">Frontend Developer</h3>
+        </a>
+      </div>
 
-      <ul class="links">
-        <li><a href="index.html" data-page="home">Home</a></li>
-        <li><a href="skills.html" data-page="skills">Skills</a></li>
-        <li><a href="projects.html" data-page="projects">Projects</a></li>
-        <li><a href="education.html" data-page="education">Education</a></li>
-        <li>
-          <a
-            href="contact.html"
-            data-page="contact"
-            onclick="if(location.pathname === 'contact.html') location.reload()"
-            >Contact</a
-          >
-        </li>
-        <li><a href="about.html" data-page="about">About</a></li>
-      </ul>
+      <div class="links">
+        <a href="index.html">
+          <i class="fa-solid fa-house"></i>
+          <span>Home </span>
+        </a>
+        <a href="skills.html">
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+          <span>Skills</span>
+        </a>
+        <a href="projects.html">
+          <i class="fa-solid fa-code"></i>
+          <span>Projects</span>
+        </a>
+        <a href="education.html">
+          <i class="fa-solid fa-user-graduate"></i>
+          <span>Education</span>
+        </a>
+        <a href="contact.html">
+          <i class="fa-solid fa-envelope"></i>
+          <span>Contact</span>
+        </a>
+        <a href="about.html">
+          <i class="fa-solid fa-user"></i>
+          <span>About</span>
+        </a>
+      </div>
 
       <span class="menu-icon" id="menuIcon" onclick="toggleMobileMenu()">
         <i class="fa-solid fa-bars"></i>
       </span>
     </header>
-    <div class="mobile-menu" id="mobileMenu">
-      <div class="close-icon" onclick="toggleMobileMenu()">
-        <i class="fa-solid fa-xmark"></i>
-      </div>
-      <ul class="mobile-nav">
-        <li><a href="index.html" data-page="home">Home</a></li>
-        <hr />
-        <li><a href="skills.html" data-page="skills">Skills</a></li>
-        <hr />
-        <li><a href="projects.html" data-page="projects">Projects</a></li>
-        <hr />
-        <li><a href="education.html" data-page="education">Education</a></li>
-        <hr />
-        <li><a href="contact.html" data-page="contact">Contact</a></li>
-        <hr />
-        <li><a href="about.html" data-page="about">About</a></li>
-        <hr />
-      </ul>
-    </div>
 
-    <section id="contact" class="about-section">
-      <div class="container">
+    <section class="about-section">
+      <div class="about-content">
         <h2>About Me</h2>
-        <div class="about-grid">
-          <div class="about-img">
-            <img
-              src="images/my_porfolio_image_black.png"
-              alt="Abdullah Rehmani"
-            />
+        <p class="sub-title">
+          Learn more about my journey, my mindset, and the skills that shape my
+          work.
+        </p>
+      </div>
+      <div class="about-layout">
+
+        <div class="about-card">
+          <div class="card-title-container">
+            <img src="images/time-machine.png" alt="" />
+            <h3 class="title">My Journey as a Frontend Developer</h3>
           </div>
-          <div class="about-text">
-            <h3>Hello! I’m Abdullah Rehmani</h3>
-            <p>
-              I’m a passionate Web Developer from Pakistan with 3+ years of
-              experience in Frontend Development. I specialize in building
-              responsive, user-friendly websites using HTML, CSS, JavaScript,
-              React and Tailwind CSS. I'm also a freelancer delivering
-              high-quality projects for clients.
-            </p>
-            <a href="contact.html" class="btn">Hire Me</a>
-          </div>
+          <p class="description">
+            I am <span>Abdullah Farooq Rehmani</span>, a frontend developer live
+            in Karachi, Pakistan. I started my web development journey back in
+            June 2022, driven by curiosity and the excitement of creating things
+            that live on the internet. What began with simple HTML and CSS
+            experiments quickly grew into a deep passion for building clean,
+            responsive, and user-friendly interfaces.
+          </p>
         </div>
+
+         <div class="about-card">
+          <div class="card-title-container">
+            <img src="images/unique.png" alt="" />
+            <h3 class="title">What Makes My Work Different</h3>
+          </div>
+          <p class="description">
+           I’m not just focused on writing code — I’m focused on writing clean, organized, and scalable code. I approach every project with a problem-solving mindset, paying attention to both functionality and user experience. I continuously learn, refine my skills, and experiment with new tools, which helps me build modern, responsive, and performance-optimized websites. 
+          </p>
+        </div>
+
       </div>
     </section>
 
+    <div class="mobile-menu" id="mobileMenu">
+      <div id="mobile-logo-container">
+        <a class="mobile-logo" href="index.html">
+          <img class="logo-img" src="images/logo.png" alt="" />
+          <div id="title-container">
+            <h1 id="title">ABDULLAH REHMANI</h1>
+            <h3 id="sub-title">Frontend Developer</h3>
+          </div>
+        </a>
+        <button class="close-icon" onclick="toggleMobileMenu()">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="mobile-nav">
+        <a href="index.html">
+          <i class="fa-solid fa-house"></i>
+          Home
+        </a>
+        <a href="skills.html">
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+          Skills
+        </a>
+        <a href="projects.html">
+          <i class="fa-solid fa-code"></i>
+          Projects
+        </a>
+        <a href="education.html">
+          <i class="fa-solid fa-user-graduate"></i>
+          Education
+        </a>
+        <a href="contact.html">
+          <i class="fa-solid fa-envelope"></i>
+          Contact
+        </a>
+        <a href="about.html">
+          <i class="fa-solid fa-user"></i>
+          About
+        </a>
+      </div>
+    </div>
     <script src="contact.js"></script>
   </body>
 </html>

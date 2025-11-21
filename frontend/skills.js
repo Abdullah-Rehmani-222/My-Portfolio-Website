@@ -1,53 +1,52 @@
-let loader = document.getElementById("loader")
-
-window.addEventListener("load", () => {
-  // Show loader immediately (optional)
-  loader.style.display = "flex";
-   document.getElementById("header").style.display = "none"
-   document.getElementById("skills").style.display = "none"
-   // Hide loader after 4 seconds
-   setTimeout(() => {
-     loader.style.display = "none";
-     document.getElementById("header").style.display = "flex"
-     document.getElementById("skills").style.display = "block"
-  }, 2500);
-});
 // Logic for Navbar Menu to show in Mobile:
 function toggleMobileMenu() {
   document.getElementById("mobileMenu").classList.toggle("active");
   document.getElementById("menuIcon").classList.toggle("active");
 }
 
-//Navabr link active logic for both computer and mobile layout:
-let links = document.querySelectorAll("a");
-console.log(links);
-let lists= document.querySelectorAll("li");
+
+// Logic for navigating skills sections:
+//? These all below is my logic not single help I got from google, chatgpt. Only I written all these logics myself.
+const button01 = document.querySelector("#btn-1")
+const button02 = document.querySelector("#btn-2")
+const button03 = document.querySelector("#btn-3")
+
+const frontend = document.querySelector(".frontend-skills")
+const tools = document.querySelector(".tools-and-services")
+const ai = document.querySelector(".ai-integration")
 
 
-const savedPage = localStorage.getItem("activePage");
+button01.classList.add("button")
+button02.classList.add("button")
+button03.classList.add("button")
 
-if (savedPage) {
-    links.forEach((link) => {
-        if (link.dataset.page === savedPage) {
-            link.classList.add("active");
-        }
-    });
-}
 
-links.forEach((link) => {
-    console.log("links:",link);
-    
-    link.addEventListener("click", (e) => {
-        console.log("Clicked link:",e.target);
-        
-        links.forEach((item) => {
-            item.classList.remove("active");
-        });
-        
-    link.classList.add("active");
-    // e.target.classList.add("active"); //above code work same like this code
+button01.classList.add("active")
+button01.addEventListener("click", () => {
+  frontend.style.display ="flex"
+  tools.style.display ="none"
+  ai.style.display = "none"
+  button01.classList.add("active")
+  button02.classList.remove("active")
+  button03.classList.remove("active")
+})
 
-    localStorage.setItem("activePage", link.dataset.page);
-});
-});
+button02.addEventListener("click", () => {
+  frontend.style.display ="none"
+  tools.style.display ="flex"
+  ai.style.display ="none"
+  button02.classList.add("active")
+  button01.classList.remove("active")
+  button03.classList.remove("active")
+})
 
+button03.addEventListener("click", () => {
+  frontend.style.display ="none"
+  tools.style.display ="none"
+  ai.style.display ="flex"
+  button03.classList.add("active")
+  button01.classList.remove("active")
+  button02.classList.remove("active")
+})
+
+// end of navigating skills sections.
