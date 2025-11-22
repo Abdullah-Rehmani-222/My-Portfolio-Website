@@ -11,18 +11,18 @@ function toggleMobileMenu() {
 
 const projectContent = document.querySelector(".project-content ");
 projectContent.style.opacity = 0;
-projectContent.style.transform = "translateY(60px)";
+projectContent.style.transform = "translateY(-40px)";
 
 const projectLayout = document.querySelector(".project-layout ");
 projectLayout.style.opacity = 0;
-projectLayout.style.transform = "translateY(60px)";
+projectLayout.style.transform = "translateY(40px)";
 
 window.addEventListener("load", () => {
   projectContent.style.transition = "transform 0.8s ease";
   projectContent.style.opacity = 1;
-  projectContent.style.transform = "translateY(-1px)";
+  projectContent.style.transform = "translateY(-0px)";
 
-  projectLayout.style.transition = "transform 0.8s ease 0.2s";
+  projectLayout.style.transition = "transform 0.8s ease 0.1s";
   projectLayout.style.opacity = 1;
-  projectLayout.style.transform = "translateY(-1px)";
+  projectLayout.style.transform = "translateY(-0px)";
 });

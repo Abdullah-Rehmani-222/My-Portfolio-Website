@@ -39,10 +39,9 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="services.css" />
   </head>
   <body>
-    <!--! THIS PORTFOLIO WEBSITE IS MADE BY ME MEANS HTML, CSS & JS IS WRITTEN BY ME & AI means Vibe Coding. -->
-
     <header id="header" class="header">
       <div id="logo">
         <img class="logo-img" href="index.html" src="images/logo.png" alt="" />
@@ -83,47 +82,125 @@
         <i class="fa-solid fa-bars"></i>
       </span>
     </header>
-    
-    <section id="section" class="section">
-      <div class="content">
-        <p id="content-title">Frontend Developer</p>
-        <h1>Abdullah Rehmani</h1>
-        <h2>I'm a <span id="typing-text"></span></h2>
-        <p>
-          I'm a passionate frontend developer from Pakistan. I have expertise in
-          JavaScript, React, Tailwind CSS and more. I craft responsive,
-          user-friendly websites.
-        </p>
-        <div class="socialmedia-icon">
-          <a
-            href="https://www.linkedin.com/in/abdullah-farooq-rehmani-257452249/"
-            target="_blank"
-            ><i class="fa-brands fa-linkedin"></i
-          ></a>
 
-          <a href="https://github.com/Abdullah-Rehmani-222" target="_blank"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-          <a
-            href="https://www.facebook.com/abdullah.rehmani.7146"
-            target="_blank"
-            ><i class="fa-brands fa-facebook"></i
-          ></a>
+    <section id="services" class="services-section">
+      <div class="services-content">
+        <h2 class="services-title">The Services I Offer</h2>
+        <p class="services-subtitle">
+          Custom web development tailored to your project’s needs and
+          objectives.
+        </p>
+      </div>
+
+      <div class="services-layout">
+        <div id="first-card" class="services-card">
+          <div class="img-container">
+            <i class="fa-brands fa-react"></i>
+            <p>Popular</p>
+          </div>
+
+          <div class="title-container">
+            <h3>React Development</h3>
+            <p>
+              Custom React applications with modern hooks, context API and
+              performance optimization.
+            </p>
+          </div>
+
+          <ul class="list-container">
+            <li>Component based architecture</li>
+            <li>Testing & debugging</li>
+            <li>State management</li>
+            <li>Performance optimization</li>
+          </ul>
+          <div class="line"></div>
+          <h4 id="price">Starting at $80</h4>
+          <a href="contact.html">Get Quote</a>
         </div>
-        <div id="button-container">
-          <a href="contact.html"
-          ><button type="button" class="btn">HIRE ME</button></a
-          >
-          <a href="projects.html"
-            ><button type="button" class="btn">
-              See My Projects
-              <i class="fa-solid fa-arrow-right"></i></button
-          ></a>
+
+        <div id="second-card" class="services-card">
+          <div class="img-container">
+            <i id="cart" class="fa-solid fa-cart-shopping"></i>
+            <p>E-commerce</p>
+          </div>
+
+          <div class="title-container">
+            <h3>Shopify Development</h3>
+            <p>
+              Custom Shopify themes, app integration and store optimization for
+              maximum conversions.
+            </p>
+          </div>
+
+          <ul class="list-container">
+            <li>Custom theme development</li>
+            <li>Performance optimization</li>
+            <li>Theme Customization</li>
+            <li>Complete Store Setup & Management</li>
+          </ul>
+
+          <div class="line"></div>
+          <h4 id="price">Starting at $50</h4>
+          <a href="contact.html">Get Quote</a>
         </div>
       </div>
 
-      <div class="content-image">
-        <img src="images/logo.png" alt="" />
+      <div class="services-content-02">
+        <h2 class="services-title">My Working Process</h2>
+        <p class="services-subtitle">
+          A transparent process that guarantees smooth progress and excellent
+          outcomes.
+        </p>
+      </div>
+
+      <div class="services-layout-02">
+        <div id="card-1" class="services-card-02">
+          <div class="step">1</div>
+          <i class="fa-solid fa-message"></i>
+
+          <h3>Discovery & Planning</h3>
+          <p>
+            We start with a detailed discussion about your project goals, target
+            audience and technical requirements.
+          </p>
+          <span>1 week</span>
+        </div>
+
+        <div id="card-2" class="services-card-02">
+          <div class="step">2</div>
+          <i class="fa-solid fa-lightbulb"></i>
+
+          <h3>Design & Strategy</h3>
+          <p>
+            Creating wireframes, mockups and technical architecture to ensure
+            the best user experience.
+          </p>
+          <span>2-3 weeks</span>
+        </div>
+
+        <div id="card-3" class="services-card-02">
+          <div class="step">3</div>
+          <i class="fa-solid fa-code"></i>
+
+          <h3>Development</h3>
+          <p>
+            Building your project with clean, maintainable code and regular
+            progress updates.
+          </p>
+          <span>3-5 weeks</span>
+        </div>
+
+        <div id="card-4" class="services-card-02">
+          <div class="step">4</div>
+          <i class="fa-solid fa-rocket"></i>
+
+          <h3>Launch & Support</h3>
+          <p>
+            Deploying your project and providing ongoing support to ensure
+            everything runs smoothly.
+          </p>
+          <span>Ongoing</span>
+        </div>
       </div>
     </section>
 
@@ -169,7 +246,6 @@
       </div>
     </div>
 
-    <script src="script.js"></script>
-    <script src="contact.js"></script>
+    <script src="services.js"></script>
   </body>
 </html>

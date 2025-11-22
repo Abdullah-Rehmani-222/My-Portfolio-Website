@@ -47,18 +47,18 @@ function toggleMobileMenu() {
 
 const homeContent = document.querySelector(".content");
 homeContent.style.opacity = 0;
-homeContent.style.transform = "translateY(60px)";
+homeContent.style.transform = "translateY(40px)";
 
 const contentImage = document.querySelector(".content-image");
 contentImage.style.opacity = 0;
-contentImage.style.transform = "translateY(60px)";
+contentImage.style.transform = "translateY(-40px)";
 
 window.addEventListener("load", () => {
   homeContent.style.transition = "transform 0.8s ease";
   homeContent.style.opacity = 1;
-  homeContent.style.transform = "translateY(-1px)";
+  homeContent.style.transform = "translateY(-0px)";
 
-  contentImage.style.transition = "transform 0.8s ease 0.1s";
+  contentImage.style.transition = "transform 0.8s ease";
   contentImage.style.opacity = 1;
-  contentImage.style.transform = "translateY(-1px)";
+  contentImage.style.transform = "translateY(-0px)";
 });

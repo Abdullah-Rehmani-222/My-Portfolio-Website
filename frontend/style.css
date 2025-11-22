@@ -28,7 +28,9 @@
   --content-social-color: rgb(160, 177, 179);
 
   /* Box Shadow Color */
-  --box-shadow-color: #f5ecec;
+
+  --box-shadow-color: rgba(96, 165, 250, 0.8);
+  /* --box-shadow-color: #f5ecec; */
 
   /* Button Background color */
   --button-background-color: #ebe1e183;
@@ -146,11 +148,6 @@ body {
   transform: translateX(0);
 }
 
-hr {
-  width: 20%;
-  margin: auto;
-}
-
 .section {
   padding: 100px 10px;
   display: flex;
@@ -214,12 +211,11 @@ hr {
 
 .section .content .socialmedia-icon a {
   color: var(--content-social-color);
-  border-radius: 46%;
+  border-radius: 10px;
   font-size: var(--font-lg2);
   padding: var(--space-lg);
   transition: transform 0.3s;
 }
-
 
 .socialmedia-icon a:hover {
   background-color: #ffffff13;
@@ -241,6 +237,10 @@ hr {
   width: fit-content;
   cursor: pointer;
   transition: transform 0.1s ease, background-color 0.3s;
+}
+
+.btn i {
+  margin: auto;
 }
 
 .section .content .btn:active {
@@ -314,6 +314,7 @@ hr {
     cursor: pointer;
     padding: 10px;
     color: var(--text-secondary-color);
+    margin-top: 6px;
   }
 
   #mobile-logo-container {
@@ -390,7 +391,8 @@ hr {
   }
 
   .section .content {
-    align-items: center;
+    align-items: start;
+    padding: 15px;
   }
 
   .section .content #content-title {
@@ -406,7 +408,7 @@ hr {
   }
 
   .section .content p {
-    text-align: center;
+    text-align: left;
   }
 
   .section .content #button-container {

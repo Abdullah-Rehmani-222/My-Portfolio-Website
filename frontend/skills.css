@@ -8,7 +8,6 @@
 body {
   min-height: 100vh;
   width: 100%;
-  color: #fff;
 }
 
 .skills-section {
@@ -26,7 +25,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 }
 
 .skills-section h2 {
@@ -61,6 +60,7 @@ body {
   border-radius: 10px;
   padding: 10px;
   cursor: pointer;
+  color: #f3eeee;
 }
 
 .button:hover {
@@ -72,7 +72,7 @@ body {
 }
 
 .skills-layout {
-  margin-top: 20px;
+  margin-top: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -111,9 +111,9 @@ body {
 
 .skill-card {
   background-color: #fff7f721;
+  border: 1px solid rgba(255, 255, 255, 0.178); 
   height: 140px;
   width: 270px;
-  border: 1px solid #333;
   padding: 20px;
   border-radius: 12px;
   display: flex;
