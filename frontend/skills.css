@@ -108,6 +108,7 @@ body {
   flex-shrink: 1;
   gap: 20px;
 }
+
 .skill-card {
   background-color: #fff7f721;
   height: 140px;
