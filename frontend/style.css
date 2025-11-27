@@ -7,7 +7,8 @@
 
 :root {
   /* Body Background Color */
-  --body-bg-color: rgba(23, 23, 23, 0.9);
+  --body-bg-color: #020617;
+  /* --body-bg-color: rgba(23, 23, 23, 0.9); */
 
   /* Header Background Color */
   --header-bg-color: rgba(23, 23, 23, 0.5);
@@ -25,7 +26,8 @@
   --content-title-color: rgba(44, 40, 40, 0.9);
   --dynamic-content-color: rgb(186, 208, 209);
   --content-para-color: #ccc;
-  --content-social-color: rgb(160, 177, 179);
+  --content-social-color: rgb(226, 238, 240);
+  /* --content-social-color: rgb(160, 177, 179); */
 
   /* Box Shadow Color */
 
@@ -60,6 +62,39 @@
   --border-radius-sm: 10px;
   --border-radius-md: 15px;
   --border-radius-lg: 24px;
+}
+
+.darkmode{
+   /* Body Background Color */
+  --body-bg-color: rgba(23, 23, 23, 0.9);
+
+  /* Header Background Color */
+  --header-bg-color: rgba(23, 23, 23, 0.5);
+  --header-bg-color-mb: rgba(23, 23, 23, 1);
+
+  /* Text Colors */
+  --text-primary-color: #f5ecec;
+  --text-secondary-color: rgba(215, 223, 226, 0.979);
+
+  /* Navbar Links Color */
+  --nav-link-color: #cfc8c8;
+  --nav-link-hover-color: #ffffff3f;
+
+  /* Content Color */
+  --content-title-color: rgba(44, 40, 40, 0.9);
+  --dynamic-content-color: rgb(186, 208, 209);
+  --content-para-color: #ccc;
+  --content-social-color: rgb(160, 177, 179);
+
+  /* Box Shadow Color */
+
+  --box-shadow-color: rgba(96, 165, 250, 0.8);
+  /* --box-shadow-color: #f5ecec; */
+
+  /* Button Background color */
+  --button-background-color: #ebe1e183;
+  --button-hover-color: #ebe1e156;
+
 }
 
 body {
@@ -168,7 +203,7 @@ body {
 }
 
 .section .content #content-title {
-  background-color: var(--content-title-color);
+  /* background-color: var(--content-title-color); */
   width: 190px;
   text-align: center;
   padding: var(--space-sm);
@@ -196,6 +231,13 @@ body {
   color: var(--content-para-color);
   line-height: 1.7;
   font-size: var(--font-sm);
+  border-left: 2px solid rgba(96, 165, 250, 0.8);
+  padding-left: 10px;
+}
+
+.section .content .para-span{
+  color: rgb(96, 165, 250);
+  font-weight: bold;
 }
 
 #typing-text {
@@ -218,7 +260,7 @@ body {
 }
 
 .socialmedia-icon a:hover {
-  background-color: #ffffff13;
+  background-color: #ffffff10;
 }
 
 .section .content #button-container {

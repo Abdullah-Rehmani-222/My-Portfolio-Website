@@ -45,7 +45,8 @@ body {
 }
 
 .skills-section .skill-navi-container {
-  background-color: #11111144;
+  /* background-color: #0c0c0c; */
+  background-color: #3d393938;
   width: 415px;
   border-radius: 10px;
   display: flex;
