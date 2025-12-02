@@ -1,6 +1,6 @@
 
 // Logic for Dynamic Typing:
-const words = ["Web Developer.", "Web Designer.", "Freelancer."];
+const words = ["Web App Developer.", "Web Designer.", "Frontend Developer.", "Freelancer."];
 const dynamicText = document.getElementById("typing-text");
 
 let wordIndex = 0;
