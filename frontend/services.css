@@ -65,6 +65,35 @@ body {
   gap: 20px;
 }
 
+.comming-soon-card {
+  position: relative;
+  z-index: 99;
+  background-color: #00000096;
+}
+
+.tag {
+  position: absolute;
+  top: -5%;
+  left: 37%;
+  z-index: 999;
+  background-color: rgba(96, 165, 250, 0.8);
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  color: #eee8e8;
+  font-weight: bold;
+}
+
+#first-card {
+  z-index: 0;
+  opacity: 0.5;
+}
+
+#first-card a {
+  pointer-events: none;
+}
+
 .services-card .img-container {
   width: 100%;
   display: flex;
@@ -207,6 +236,8 @@ body {
   height: 40px;
   width: 40px;
   text-align: center;
+  color: #eee8e8;
+  font-weight: bold;
 }
 
 .services-layout-02 #card-3 {
@@ -272,6 +303,10 @@ body {
     width: 340px;
   }
 
+  .tag {
+    left: 30%;
+  }
+
   .services-content-02 {
     margin-top: 100px;
     max-width: 500px;
@@ -311,6 +346,10 @@ body {
 
   .services-card {
     width: 400px;
+  }
+
+  .tag {
+    left: 32%;
   }
 
   .services-content-02 {
@@ -354,6 +393,10 @@ body {
     width: 450px;
   }
 
+  .tag {
+    left: 34%;
+  }
+
   .services-content-02 {
     margin-top: 100px;
     max-width: 500px;
@@ -393,6 +436,10 @@ body {
 
   .services-card {
     width: 500px;
+  }
+
+  .tag {
+    left: 35%;
   }
 
   .services-content-02 {
