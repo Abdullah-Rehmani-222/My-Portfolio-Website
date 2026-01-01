@@ -49,3 +49,5 @@ window.addEventListener("load", () => {
   info_02.style.opacity = 1;
   info_02.style.transform = "translateX(-0px)";
 });
+
+

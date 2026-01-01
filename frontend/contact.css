@@ -30,7 +30,7 @@ body {
   gap: 10px;
 }
 
-.contact-section h2 {
+.contact-section .contact-content-title {
   font-size: 35px;
   color: #00ffff;
 }
@@ -47,7 +47,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
   flex-shrink: 1;
-  gap: 20px;
+  gap: 50px;
 }
 
 .contact-form {
@@ -68,6 +68,14 @@ body {
   gap: 20px;
 }
 
+.contact-form-title {
+  color: rgba(215, 223, 226, 0.979);
+}
+
+.label {
+  color: #ffffff77;
+}
+
 .contact-form input,
 .contact-form textarea {
   padding: 15px;
@@ -77,6 +85,11 @@ body {
   color: white;
   font-size: 1rem;
   width: 100%;
+  margin-top: 4px;
+}
+
+textarea {
+  resize: none;
 }
 
 .contact-form input::placeholder,
@@ -150,6 +163,10 @@ body {
   text-decoration: none;
 }
 
+.least-info #Location-para {
+  color: cadetblue;
+}
+
 .least-info a:hover {
   color: blue;
 }
@@ -175,6 +192,64 @@ body {
   background-color: #fff7f717;
 }
 
+.toast-container {
+  background-color: #212529;
+  position: fixed;
+  bottom: 2%;
+  right: 1%;
+  z-index: 999;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+}
+
+.toast {
+  /* padding: 5px 0; */
+  width: 100%;
+}
+
+.toast-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  display: flex;
+  justify-content: space-between;
+  padding: 6px;
+}
+
+.toast-header-content {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.toast-header i {
+  color: darkslategray;
+}
+
+.toast-title {
+  color: rgba(222, 226, 230, 0.75);
+  font-weight: bold;
+}
+
+.toast-time {
+  color: rgba(222, 226, 230, 0.75);
+}
+
+.btn-close {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.toast-body {
+  padding: 10px;
+  margin-left: 2px;
+  color: #f5ecec;
+}
+
 @media (max-width: 420px) {
   .contact-section {
     padding: 120px 10px;
@@ -186,7 +261,7 @@ body {
     width: 350px;
   }
 
-  .contact-section h2 {
+  .contact-section .contact-content-title {
     font-size: 30px;
   }
 
@@ -196,7 +271,11 @@ body {
 
   .contact-form {
     width: 330px;
-    padding: 10px;
+    padding: 20px;
+  }
+
+  .contact-form-title {
+    font-size: 22px;
   }
 
   .contact-section .contact-content-02 {
@@ -210,6 +289,11 @@ body {
 
   .info {
     width: 330px;
+  }
+
+  .toast-container {
+    right: 3%;
+    width: 300px;
   }
 }
 
@@ -224,7 +308,7 @@ body {
     max-width: 420px;
   }
 
-  .contact-section h2 {
+  .contact-section .contact-content-title {
     font-size: 30px;
   }
 
@@ -235,6 +319,10 @@ body {
   .contact-form {
     padding: 20px;
     width: 400px;
+  }
+
+  .contact-form-title {
+    font-size: 22px;
   }
 
   .contact-form input,
@@ -248,6 +336,10 @@ body {
 
   .info {
     width: 400px;
+  }
+
+  .toast-container {
+    right: 3%;
   }
 }
 
@@ -262,7 +354,7 @@ body {
     max-width: 450px;
   }
 
-  .contact-section h2 {
+  .contact-section .contact-content-title {
     font-size: 30px;
   }
 
@@ -273,6 +365,10 @@ body {
   .contact-form {
     padding: 20px;
     width: 500px;
+  }
+
+  .contact-form-title {
+    font-size: 24px;
   }
 
   .contact-form input,
@@ -286,6 +382,10 @@ body {
 
   .info {
     width: 500px;
+  }
+
+  .toast-container {
+    right: 3%;
   }
 }
 
@@ -300,7 +400,7 @@ body {
     max-width: 400px;
   }
 
-  .contact-section h2 {
+  .contact-section .contact-content-title {
     font-size: 30px;
   }
 
@@ -311,6 +411,10 @@ body {
   .contact-form {
     padding: 20px;
     width: 600px;
+  }
+
+  .contact-form-title {
+    font-size: 24px;
   }
 
   .contact-form input,
@@ -325,26 +429,65 @@ body {
   .info {
     width: 600px;
   }
+
+  .toast-container {
+    right: 3%;
+  }
 }
 
-@media (min-width: 711px) and (max-width: 800px) {
+@media (min-width: 711px) and (max-width: 750px) {
+  .contact-section {
+    padding: 120px 10px;
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .contact-section .contact-content {
+    max-width: 400px;
+  }
+
+  .contact-section .contact-content-title {
+    font-size: 30px;
+  }
+
+  .contact-section .contact-subtitle {
+    font-size: 16px;
+  }
+
   .contact-form {
-    /* padding: 20px; */
+    padding: 20px;
+    width: 600px;
+  }
+
+  .contact-form-title {
+    font-size: 24px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 16px;
+  }
+
+  .contact-section .contact-content-02 {
+    justify-content: center;
+  }
+
+  .info {
+    width: 600px;
+  }
+
+  .toast-container {
+    right: 3%;
+  }
+}
+
+@media (min-width: 751px) and (max-width: 880px) {
+  .contact-form {
     width: 340px;
   }
 
   .info {
     width: 340px;
-  }
-}
-
-@media (min-width: 801px) and (max-width: 880px) {
-  .contact-form {
-    width: 380px;
-  }
-
-  .info {
-    width: 380px;
   }
 }
 
@@ -360,30 +503,30 @@ body {
 
 @media (min-width: 941px) and (max-width: 1010px) {
   .contact-form {
-    width: 440px;
+    width: 420px;
   }
 
   .info {
-    width: 440px;
+    width: 420px;
   }
 }
 
 @media (min-width: 1011px) and (max-width: 1100px) {
   .contact-form {
-    width: 480px;
+    width: 440px;
   }
 
   .info {
-    width: 480px;
+    width: 440px;
   }
 }
 
-@media (min-width: 1101px) and (max-width: 1240px) {
+@media (min-width: 1101px) and (max-width: 1270px) {
   .contact-form {
-    width: 530px;
+    width: 500px;
   }
 
   .info {
-    width: 530px;
+    width: 500px;
   }
 }

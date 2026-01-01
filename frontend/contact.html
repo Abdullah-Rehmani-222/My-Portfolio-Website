@@ -84,7 +84,7 @@
 
     <section id="contact" class="contact-section">
       <div class="contact-content">
-        <h2>Let's Work Together</h2>
+        <h2 class="contact-content-title">Let's Work Together</h2>
         <p class="contact-subtitle">
           Get in touch — I’m open to new opportunities and conversations.
         </p>
@@ -93,20 +93,31 @@
       <div class="contact-content-02">
         <form class="contact-form" id="contact-form">
           <div class="contact-form-container">
-            <input type="text" name="name" placeholder="Your Name" required />
-            <input
-              type="email"
-              name="email"
-              placeholder="Your Email"
-              required
-            />
-            <textarea
-              rows="5"
-              name="message"
-              placeholder="Explain Your Idea..."
-              required
-            ></textarea>
-            <button type="submit">
+            <h2 class="contact-form-title">Send Me a Message</h2>
+            <label for="name">
+              <span class="label">Name:</span>
+              <input type="text" name="name" placeholder="Your Name" required />
+            </label>
+            <label for="email">
+              <span class="label">Email:</span>
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+            </label>
+            <label for="message">
+              <span class="label">Message:</span>
+
+              <textarea
+                rows="5"
+                name="message"
+                placeholder="Explain Your Idea..."
+                required
+              ></textarea>
+            </label>
+            <button id="liveToastBtn" type="submit">
               <i class="fa-solid fa-paper-plane"></i>
               Send Message
             </button>
@@ -132,7 +143,25 @@
               <i class="fa-solid fa-phone"></i>
               <div class="least-info">
                 <p>Phone</p>
-                <a href="https://wa.me/+923059255577">+923059255577</a>
+                <a href="https://wa.me/+923059255577" target="_blank"
+                  >+923059255577</a
+                >
+              </div>
+            </div>
+
+            <div class="sub-info">
+              <i class="fa-solid fa-location-dot"></i>
+              <div class="least-info">
+                <p>Location</p>
+                <p id="Location-para">Karachi, Pakistan</p>
+              </div>
+            </div>
+
+            <div class="sub-info">
+              <i class="fa-solid fa-clock"></i>
+              <div class="least-info">
+                <p>Response</p>
+                <p id="Location-para">Within 24 hours</p>
               </div>
             </div>
           </div>
@@ -199,9 +228,37 @@
       </div>
     </div>
 
+    <!--! This Toast logic I made myself without any help of AI and something else  -->
+    <div id="toast-container" class="toast-container">
+      <div id="liveToast" class="toast">
+        <div class="toast-header">
+          <div class="toast-header-content">
+            <i class="fa-solid fa-signal"></i>
+            <strong class="toast-title">Status</strong>
+          </div>
+
+          <div class="toast-header-content">
+            <small class="toast-time">just now</small>
+            <i id="btn-close" class="btn-close fa-solid fa-xmark"></i>
+          </div>
+        </div>
+        <div id="toast-para" class="toast-body"></div>
+      </div>
+    </div>
+
     <script src="contact.js"></script>
     <script>
+      //! This Toast logic I made myself without any help of AI and something else  
+      const toast = document.getElementById("toast-container");
+      const toastPara = document.getElementById("toast-para");
+      const closeButton = document.getElementById("btn-close");
+
       const form = document.getElementById("contact-form");
+
+      //! This Toast logic I made myself without any help of AI and something else  
+      closeButton.addEventListener("click", () => {
+        toast.style.display = "none";
+      });
 
       form.addEventListener("submit", async (e) => {
         e.preventDefault();
@@ -220,10 +277,27 @@
           });
 
           const data = await res.json();
-          alert(data.message);
+          //! This Toast logic I made myself without any help of AI and something else  
+          if (toast) {
+              toast.style.display = "flex";
+              toastPara.textContent = data.message;
+              toastPara.style.color = "lightgreen";
+            setTimeout(() => {
+              toast.style.display = "none";
+            }, 3000);
+          }
           form.reset();
         } catch (err) {
-          alert("Failed to send message.");
+          //! This Toast logic I made myself without any help of AI and something else  
+          if (toast) {
+              toast.style.display = "flex";
+              toastPara.textContent = "Failed to send message!";
+              toastPara.style.color = "red";
+            setTimeout(() => {
+              toast.style.display = "none";
+            }, 3000);
+          }
+
           console.error(err);
         }
       });
