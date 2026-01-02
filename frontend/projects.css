@@ -55,7 +55,7 @@ body {
 .project-layout .project-card {
   /* background-color: #fff7f71e; */
   background-color: #fff7f715;
-  border: 1px solid rgba(255, 255, 255, 0.178); 
+  /* border: 1px solid rgba(255, 255, 255, 0.178);  */
   border-radius: 20px;
   cursor: default;
   width: 300px;

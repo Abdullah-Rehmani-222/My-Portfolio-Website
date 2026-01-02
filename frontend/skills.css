@@ -112,11 +112,11 @@ body {
 
 .skill-card {
   background-color: #fff7f721;
-  border: 1px solid rgba(255, 255, 255, 0.178); 
+  /* border: 1px solid rgba(255, 255, 255, 0.178);  */
   height: 140px;
   width: 270px;
   padding: 20px;
-  border-radius: 12px;
+  border-radius: 14px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
