@@ -119,9 +119,9 @@ body {
   margin-left: 40px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 420px) {
   .about-section {
-    padding: 100px 10px;
+    padding: 130px 10px;
     gap: 50px;
   }
 
@@ -130,7 +130,7 @@ body {
   }
 
   .about-content h2 {
-    font-size: 30px;
+    font-size: 32px;
   }
 
   .about-content .sub-title {
@@ -148,5 +148,74 @@ body {
 
   .card-title-container i {
     margin-top: 12px;
+  }
+
+  .card-first-section,
+  .card-second-section {
+    margin-left: 15px;
+  }
+}
+
+@media (min-width: 421px) and (max-width: 560px) {
+  .about-section {
+    padding: 130px 10px;
+    gap: 50px;
+  }
+
+  .about-section .about-content {
+    max-width: 500px;
+  }
+
+  .about-content h2 {
+    font-size: 32px;
+  }
+
+  .about-content .sub-title {
+    font-size: 16px;
+  }
+
+  .about-layout .about-card,
+  .education-card {
+    width: 400px;
+  }
+
+  .card-title-container #card-icon {
+    margin-top: 12px;
+  }
+
+  .card-first-section,
+  .card-second-section {
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: 561px) and (max-width: 660px) {
+  .about-section {
+    padding: 130px 10px;
+    gap: 50px;
+  }
+
+  .about-section .about-content {
+    max-width: 500px;
+  }
+
+  .about-content h2 {
+    font-size: 34px;
+  }
+
+  .about-content .sub-title {
+    font-size: 18px;
+  }
+
+  .about-layout .about-card,
+  .education-card {
+    width: 500px;
+  }
+}
+
+@media (min-width: 661px) and (max-width: 700px) {
+  .about-section {
+    padding: 130px 10px;
+    gap: 50px;
   }
 }
