@@ -49,32 +49,3 @@ button03.addEventListener("click", () => {
 // end of navigating skills sections.
 
 
-// Animation:
-//? These all below is my logic not single help I got from google, chatgpt. Only I written all these logics myself.
-
-const skillsContent = document.querySelector(".skill-content");
-skillsContent.style.opacity = 0;
-
-const skillsLayout = document.querySelector(".skills-layout ");
-skillsLayout.style.opacity = 0;
-
-// 550
-if (skillsLayout.clientWidth <= 550) {
-  skillsContent.style.transform = "translateY(-40px)";
-  skillsLayout.style.transform = "translateY(40px)";
-}
-else {
-  skillsContent.style.transform = "translateY(40px)";
-  skillsLayout.style.transform = "translateY(40px)";
-}
-
-window.addEventListener("load", () => {
-  skillsContent.style.transition = "transform 0.8s ease";
-  skillsContent.style.opacity = 1;
-  skillsContent.style.transform = "translateY(-0px)";
-
-  skillsLayout.style.transition = "transform 0.8s ease 0.1s";
-  skillsLayout.style.opacity = 1;
-  skillsLayout.style.transform = "translateY(-0px)";
-});
-

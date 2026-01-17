@@ -51,29 +51,35 @@
       </div>
 
       <div class="links">
-        <a href="index.html">
+        <a href="index.html" class="tooltip">
           <i class="fa-solid fa-house"></i>
           <span>Home</span>
+          <p class="tooltip-text">Home</p>
         </a>
-        <a href="skills.html">
+        <a href="skills.html" class="tooltip">
           <i class="fa-solid fa-screwdriver-wrench"></i>
           <span>Skills</span>
+          <p class="tooltip-text">Skills</p>
         </a>
-        <a href="projects.html">
+        <a href="projects.html" class="tooltip">
           <i class="fa-solid fa-code"></i>
           <span>Projects</span>
+          <p class="tooltip-text">Projects</p>
         </a>
-        <a href="services.html">
+        <a href="services.html" class="tooltip">
           <i class="fa-solid fa-briefcase"></i>
           <span>Services</span>
+          <p class="tooltip-text">Services</p>
         </a>
-        <a href="contact.html">
+        <a href="contact.html" class="tooltip">
           <i class="fa-solid fa-envelope"></i>
           <span>Contact</span>
+          <p class="tooltip-text">Contact</p>
         </a>
-        <a href="about.html">
+        <a href="about.html" class="tooltip">
           <i class="fa-solid fa-user"></i>
           <span>About</span>
+          <p class="tooltip-text">About</p>
         </a>
       </div>
 
@@ -91,9 +97,13 @@
       </div>
 
       <div class="contact-content-02">
+
         <form class="contact-form" id="contact-form">
+          <div class="card-title-container">
+            <div class="logo"><i class="fa-solid fa-message"></i></div>
+            <h2 class="contact-title">Send Me a Message</h2>
+          </div>
           <div class="contact-form-container">
-            <h2 class="contact-form-title">Send Me a Message</h2>
             <label for="name">
               <span class="label">Name:</span>
               <input type="text" name="name" placeholder="Your Name" required />
@@ -125,64 +135,103 @@
         </form>
 
         <div class="info-container">
-          <div id="info-1" class="info">
-            <h3 id="info-title">Get in Touch</h3>
-
-            <div class="sub-info">
-              <i class="fa-solid fa-envelope"></i>
-
-              <div class="least-info">
-                <p>Email</p>
-                <a href="mailto:abdullahrehmani7146@gmail.com"
-                  >abdullahrehmani@gmail.com</a
-                >
-              </div>
+          <div>
+            <div class="card-title-container animated-title-02">
+              <div class="logo"><i class="fa-solid fa-phone"></i></div>
+              <h2 class="contact-title">Get in Touch</h2>
             </div>
+            <div id="info-1" class="info">
+              <div id="sub-info-01" class="sub-info">
+                <i class="fa-solid fa-envelope"></i>
 
-            <div class="sub-info">
-              <i class="fa-solid fa-phone"></i>
-              <div class="least-info">
-                <p>Phone</p>
-                <a href="https://wa.me/+923059255577" target="_blank"
-                  >+923059255577</a
-                >
+                <div class="least-info">
+                  <p>Email</p>
+                  <a href="mailto:abdullahrehmani7146@gmail.com"
+                    >abdullahrehmani@gmail.com</a
+                  >
+                </div>
               </div>
-            </div>
 
-            <div class="sub-info">
-              <i class="fa-solid fa-location-dot"></i>
-              <div class="least-info">
-                <p>Location</p>
-                <p id="Location-para">Karachi, Pakistan</p>
+              <div class="sub-info">
+                <i class="fa-solid fa-phone"></i>
+                <div class="least-info">
+                  <p>Phone</p>
+                  <a href="https://wa.me/+923059255577" target="_blank"
+                    >+923059255577</a
+                  >
+                </div>
               </div>
-            </div>
 
-            <div class="sub-info">
-              <i class="fa-solid fa-clock"></i>
-              <div class="least-info">
-                <p>Response</p>
-                <p id="Location-para">Within 24 hours</p>
+              <div class="sub-info animated-card">
+                <i class="fa-solid fa-location-dot"></i>
+                <div class="least-info">
+                  <p>Location</p>
+                  <p id="Location-para">Karachi, Pakistan</p>
+                </div>
+              </div>
+
+              <div class="sub-info animated-card">
+                <i class="fa-solid fa-clock"></i>
+                <div class="least-info">
+                  <p>Response</p>
+                  <p id="Location-para">Within 24 hours</p>
+                </div>
               </div>
             </div>
           </div>
 
-          <div id="info-2" class="info">
-            <h3 id="info-title">Follow Me</h3>
-            <div class="social-info">
-              <a
-                href="https://www.linkedin.com/in/abdullah-farooq-rehmani-257452249/"
-              >
-                <i class="fa-brands fa-linkedin"></i>
-              </a>
-              <a href="https://github.com/Abdullah-Rehmani-222">
-                <i class="fa-brands fa-github"></i>
-              </a>
-              <a href="https://www.facebook.com/abdullah.rehmani.7146">
-                <i class="fa-brands fa-facebook"></i>
-              </a>
+          <div>
+            <div class="card-title-container animated-title">
+              <div class="logo"><i class="fa-solid fa-earth-africa"></i></div>
+              <h2 class="contact-title">Social Presence</h2>
+            </div>
+            <div id="info-2">
+              <div class="social-info">
+                <a
+                  href="https://www.linkedin.com/in/abdullah-farooq-rehmani-257452249/"
+                  target="_blank"
+                  class="social-subinfo"
+                >
+                  <i id="social-icons-01" class="fa-brands fa-linkedin"></i>
+                  <h3>Linkedin</h3>
+                  <p>Abdullah Farooq Rehmani</p>
+                </a>
+
+                <a
+                  href="https://github.com/Abdullah-Rehmani-222"
+                  target="_blank"
+                  class="social-subinfo"
+                >
+                  <i id="social-icons-02" class="fa-brands fa-github"></i>
+                  <h3>Github</h3>
+                  <p>Abdullah Farooq Rehmani</p>
+                </a>
+
+                <a
+                  href="https://www.facebook.com/profile.php?id=61583532714796"
+                  target="_blank"
+                  class="social-subinfo"
+                >
+                  <i id="social-icons-03" class="fa-brands fa-facebook"></i>
+                  <h3>Facebook</h3>
+                  <p>Abdullah Frontend Developer</p>
+                </a>
+
+                <a
+                  href="https://www.instagram.com/abdullahrehmani222/"
+                  target="_blank"
+                  class="social-subinfo"
+                >
+                  <i id="social-icons-04" class="fa-brands fa-instagram"></i>
+                  <h3>Instagram</h3>
+                  <p>Abdullah Farooq Rehmani</p>
+                </a>
+
+              </div>
             </div>
           </div>
         </div>
+
       </div>
     </section>
 
@@ -248,14 +297,14 @@
 
     <script src="contact.js"></script>
     <script>
-      //! This Toast logic I made myself without any help of AI and something else  
+      //! This Toast logic I made myself without any help of AI and something else
       const toast = document.getElementById("toast-container");
       const toastPara = document.getElementById("toast-para");
       const closeButton = document.getElementById("btn-close");
 
       const form = document.getElementById("contact-form");
 
-      //! This Toast logic I made myself without any help of AI and something else  
+      //! This Toast logic I made myself without any help of AI and something else
       closeButton.addEventListener("click", () => {
         toast.style.display = "none";
       });
@@ -277,22 +326,22 @@
           });
 
           const data = await res.json();
-          //! This Toast logic I made myself without any help of AI and something else  
+          //! This Toast logic I made myself without any help of AI and something else
           if (toast) {
-              toast.style.display = "flex";
-              toastPara.textContent = data.message;
-              toastPara.style.color = "lightgreen";
+            toast.style.display = "flex";
+            toastPara.textContent = data.message;
+            toastPara.style.color = "lightgreen";
             setTimeout(() => {
               toast.style.display = "none";
             }, 3000);
           }
           form.reset();
         } catch (err) {
-          //! This Toast logic I made myself without any help of AI and something else  
+          //! This Toast logic I made myself without any help of AI and something else
           if (toast) {
-              toast.style.display = "flex";
-              toastPara.textContent = "Failed to send message!";
-              toastPara.style.color = "red";
+            toast.style.display = "flex";
+            toastPara.textContent = "Failed to send message!";
+            toastPara.style.color = "red";
             setTimeout(() => {
               toast.style.display = "none";
             }, 3000);

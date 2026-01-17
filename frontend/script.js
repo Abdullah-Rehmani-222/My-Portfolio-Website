@@ -1,4 +1,3 @@
-
 // Logic for Dynamic Typing:
 const words = ["Web App Developer.", "Web Designer.", "Frontend Developer.", "Freelancer."];
 const dynamicText = document.getElementById("typing-text");
@@ -42,23 +41,3 @@ function toggleMobileMenu() {
   document.getElementById("menuIcon").classList.toggle("active");
 }
 
-// Animation:
-//? These all below is my logic not single help I got from google, chatgpt. Only I written all these logics myself.
-
-const homeContent = document.querySelector(".content");
-homeContent.style.opacity = 0;
-homeContent.style.transform = "translateY(40px)";
-
-const contentImage = document.querySelector(".content-image");
-contentImage.style.opacity = 0;
-contentImage.style.transform = "translateY(-40px)";
-
-window.addEventListener("load", () => {
-  homeContent.style.transition = "transform 0.8s ease";
-  homeContent.style.opacity = 1;
-  homeContent.style.transform = "translateY(-0px)";
-
-  contentImage.style.transition = "transform 0.8s ease";
-  contentImage.style.opacity = 1;
-  contentImage.style.transform = "translateY(-0px)";
-});

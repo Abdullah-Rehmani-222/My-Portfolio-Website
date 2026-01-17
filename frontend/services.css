@@ -185,6 +185,21 @@ body {
   justify-content: center;
   align-items: center;
   gap: 10px;
+
+  animation: text-appear both;
+  animation-timeline: view();
+  animation-range: entry 20% cover 70%;
+}
+
+@keyframes text-appear {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .services-content-02 .services-title {
@@ -206,6 +221,9 @@ body {
   flex-wrap: wrap;
   flex-shrink: 1;
   gap: 30px;
+  animation: text-appear both;
+  animation-timeline: view();
+  animation-range: entry 20% cover 50%;
 }
 
 .services-layout-02 .services-card-02 {
@@ -213,7 +231,7 @@ body {
   background-color: #fff7f710;
   width: 300px;
   padding: 20px;
-  border: 2px solid ;
+  border: 2px solid transparent;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
@@ -294,13 +312,19 @@ body {
   }
 
   .services-layout {
-    margin-top: 50px;
+    margin-top: 80px;
     flex-direction: column;
     gap: 30px;
   }
 
   .services-card {
     width: 340px;
+  }
+
+  #second-card {
+    animation: text-appear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 70%;
   }
 
   .tag {
@@ -318,6 +342,16 @@ body {
 
   .services-content-02 .services-subtitle {
     font-size: 16px;
+  }
+
+  .services-layout-02 {
+    animation: none;
+  }
+
+  .services-layout-02 .animated-card {
+    animation: text-appear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 70%;
   }
 }
 
@@ -339,13 +373,19 @@ body {
   }
 
   .services-layout {
-    margin-top: 50px;
+    margin-top: 80px;
     flex-direction: column;
     gap: 30px;
   }
 
   .services-card {
     width: 400px;
+  }
+
+  #second-card {
+    animation: text-appear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 70%;
   }
 
   .tag {
@@ -363,6 +403,16 @@ body {
 
   .services-content-02 .services-subtitle {
     font-size: 16px;
+  }
+
+  .services-layout-02 {
+    animation: none;
+  }
+
+  .services-layout-02 .animated-card {
+    animation: text-appear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 70%;
   }
 }
 
@@ -384,13 +434,19 @@ body {
   }
 
   .services-layout {
-    margin-top: 50px;
+    margin-top: 80px;
     flex-direction: column;
     gap: 30px;
   }
 
   .services-card {
     width: 450px;
+  }
+
+  #second-card {
+    animation: text-appear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 70%;
   }
 
   .tag {
@@ -408,6 +464,16 @@ body {
 
   .services-content-02 .services-subtitle {
     font-size: 16px;
+  }
+
+  .services-layout-02 {
+    animation: none;
+  }
+
+  .services-layout-02 .animated-card {
+    animation: text-appear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 70%;
   }
 }
 
@@ -429,13 +495,19 @@ body {
   }
 
   .services-layout {
-    margin-top: 50px;
+    margin-top: 80px;
     flex-direction: column;
     gap: 30px;
   }
 
   .services-card {
     width: 500px;
+  }
+
+  #second-card {
+    animation: text-appear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 70%;
   }
 
   .tag {
@@ -453,6 +525,16 @@ body {
 
   .services-content-02 .services-subtitle {
     font-size: 16px;
+  }
+
+  .services-layout-02 {
+    animation: none;
+  }
+
+  .services-layout-02 .animated-card {
+    animation: text-appear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 70%;
   }
 }
 
@@ -474,13 +556,19 @@ body {
   }
 
   .services-layout {
-    margin-top: 50px;
+    margin-top: 80px;
     flex-direction: column;
     gap: 30px;
   }
 
   .services-card {
     width: 560px;
+  }
+
+  #second-card {
+    animation: text-appear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 70%;
   }
 
   .services-content-02 {
@@ -494,5 +582,46 @@ body {
 
   .services-content-02 .services-subtitle {
     font-size: 16px;
+  }
+
+  .services-layout-02 {
+    animation: none;
+  }
+
+  .services-layout-02 .animated-card {
+    animation: text-appear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 70%;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 1039px) {
+  #second-card {
+    animation: text-appear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 70%;
+  }
+
+  .services-layout-02 {
+    animation: none;
+  }
+
+  .services-layout-02 .animated-card {
+    animation: text-appear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 70%;
+  }
+}
+
+@media (min-width: 1040px) and (max-width: 1310px) {
+
+  .services-layout-02 {
+    animation: none;
+  }
+
+  .services-layout-02 .animated-card {
+    animation: text-appear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 70%;
   }
 }

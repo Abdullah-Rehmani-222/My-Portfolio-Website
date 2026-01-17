@@ -43,19 +43,39 @@ body {
 
 .contact-section .contact-content-02 {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-around;
+  align-items: start;
   flex-wrap: wrap;
   flex-shrink: 1;
-  gap: 50px;
+  gap: 120px;
+  margin-top: 50px;
 }
 
 .contact-form {
-  width: 600px;
-  background-color: #fff7f717;
-  /* border: 1px solid rgba(255, 255, 255, 0.178); */
-  padding: 30px;
-  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.card-title-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  text-align: center;
+  gap: 20px;
+}
+
+.card-title-container .logo {
+  font-size: 20px;
+  color: #f5ecec;
+  background-color: #60a5fa;
+  padding: 0.75rem;
+  border-radius: 1rem;
+}
+
+.contact-title {
+  color: rgba(215, 223, 226, 0.979);
 }
 
 .contact-form-container {
@@ -64,16 +84,16 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   flex-shrink: 1;
-  /* align-items: center; */
   gap: 20px;
-}
-
-.contact-form-title {
-  color: rgba(215, 223, 226, 0.979);
+  width: 500px;
+  background-color: #fff7f717;
+  /* border: 1px solid rgba(255, 255, 255, 0.178); */
+  padding: 30px;
+  border-radius: 15px;
 }
 
 .label {
-  color: #ffffff77;
+  color: #f0e8e8;
 }
 
 .contact-form input,
@@ -82,7 +102,7 @@ body {
   border: none;
   border-radius: 8px;
   background-color: #817a7a2c;
-  color: white;
+  color: #f5ecec;
   font-size: 1rem;
   width: 100%;
   margin-top: 4px;
@@ -94,7 +114,7 @@ textarea {
 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
-  color: #f5ecec;
+  color: #ffffff77;
 }
 
 .contact-form button {
@@ -116,35 +136,52 @@ textarea {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: start;
+  flex-wrap: wrap;
+  flex-shrink: 1;
+  gap: 60px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   flex-shrink: 1;
   gap: 20px;
 }
 
-.info {
-  width: 600px;
+.sub-info {
+  width: 500px;
   background-color: #fff7f717;
   /* border: 1px solid rgba(255, 255, 255, 0.178); */
   padding: 30px;
   border-radius: 15px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
+  justify-content: start;
+  /* align-items: center; */
   flex-wrap: wrap;
   flex-shrink: 1;
   gap: 20px;
 }
 
-.info #info-title {
-  color: rgba(215, 223, 226, 0.979);
-  font-size: 22px;
+.sub-info:hover {
+  background-color: #e1dede29;
 }
 
-.sub-info {
-  display: flex;
-  gap: 10px;
+.animated-card {
+  animation: text-appear both;
+  animation-timeline: view();
+  animation-range: entry 20% cover 30%;
+}
+
+@keyframes text-appear {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .sub-info i {
@@ -171,25 +208,82 @@ textarea {
   color: blue;
 }
 
+.animated-title {
+  animation: text-appear both;
+  animation-timeline: view();
+  animation-range: entry 20% cover 70%;
+}
+
 .social-info {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  gap: 20px;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  animation: fadeup both;
+  animation-timeline: view();
+  animation-range: entry 20% cover 40%;
 }
 
-.social-info a {
-  text-align: center;
-  color: white;
-  background-color: #11111170;
-  padding: 5px;
-  width: 40px;
-  border-radius: 10px;
+@keyframes fadeup {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
-
-.social-info a:hover {
+.social-info .social-subinfo {
+  width: 250px;
   background-color: #fff7f717;
+  padding: 30px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  flex-wrap: wrap;
+  flex-shrink: 1;
+  gap: 4px;
+  text-decoration: none;
+  color: #f5ecec;
+}
+
+.social-info .social-subinfo:hover {
+  background-color: #e1dede29;
+}
+
+.social-subinfo i {
+  font-size: 30px;
+}
+
+.social-subinfo #social-icons-01 {
+  color: #6e5494;
+}
+
+.social-subinfo #social-icons-02 {
+  color: #000000;
+}
+
+.social-subinfo #social-icons-03 {
+  color: #47257a;
+}
+
+.social-subinfo #social-icons-04 {
+  color: #851a6a;
+}
+
+.social-subinfo h3 {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.social-subinfo p {
+  color: cadetblue;
+  margin-left: 5px;
 }
 
 .toast-container {
@@ -269,17 +363,17 @@ textarea {
     font-size: 16px;
   }
 
-  .contact-form {
-    width: 330px;
+  .contact-section .contact-content-02 {
+    justify-content: center;
+  }
+
+  .contact-form-container {
+    width: 320px;
     padding: 20px;
   }
 
-  .contact-form-title {
+  .contact-title {
     font-size: 22px;
-  }
-
-  .contact-section .contact-content-02 {
-    justify-content: center;
   }
 
   .contact-form input,
@@ -287,8 +381,36 @@ textarea {
     font-size: 16px;
   }
 
-  .info {
-    width: 330px;
+  .info-container {
+    align-items: center;
+  }
+
+  .sub-info {
+    width: 328px;
+    padding: 20px;
+    animation: text-appear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 30%;
+  }
+
+  .social-info {
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+    gap: 20px;
+    animation: none;
+  }
+
+  .social-info .social-subinfo {
+    width: 320px;
+    padding: 20px;
+    animation: text-appear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 50%;
+  }
+
+  .animated-title-02 {
+    animation: text-appear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 70%;
   }
 
   .toast-container {
@@ -316,12 +438,16 @@ textarea {
     font-size: 16px;
   }
 
-  .contact-form {
-    padding: 20px;
-    width: 400px;
+  .contact-section .contact-content-02 {
+    justify-content: center;
   }
 
-  .contact-form-title {
+  .contact-form-container {
+    width: 370px;
+    padding: 20px;
+  }
+
+  .contact-title {
     font-size: 22px;
   }
 
@@ -330,12 +456,36 @@ textarea {
     font-size: 16px;
   }
 
-  .contact-section .contact-content-02 {
-    justify-content: center;
+  .info-container {
+    align-items: center;
   }
 
-  .info {
-    width: 400px;
+  .sub-info {
+    width: 370px;
+    padding: 20px;
+    animation: text-appear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 30%;
+  }
+
+  .social-info {
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+    gap: 20px;
+    animation: none;
+  }
+
+  .social-info .social-subinfo {
+    width: 370px;
+    padding: 20px;
+    animation: text-appear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 50%;
+  }
+
+  .animated-title-02 {
+    animation: text-appear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 70%;
   }
 
   .toast-container {
@@ -362,12 +512,16 @@ textarea {
     font-size: 16px;
   }
 
-  .contact-form {
+  .contact-section .contact-content-02 {
+    justify-content: center;
+  }
+
+  .contact-form-container {
     padding: 20px;
     width: 500px;
   }
 
-  .contact-form-title {
+  .contact-title {
     font-size: 24px;
   }
 
@@ -376,12 +530,36 @@ textarea {
     font-size: 16px;
   }
 
-  .contact-section .contact-content-02 {
-    justify-content: center;
+  .info-container {
+    align-items: center;
   }
 
-  .info {
-    width: 500px;
+  .sub-info {
+    width: 450px;
+    padding: 20px;
+    animation: text-appear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 30%;
+  }
+
+  .social-info {
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+    gap: 20px;
+    animation: none;
+  }
+
+  .social-info .social-subinfo {
+    width: 450px;
+    padding: 20px;
+    animation: text-appear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 50%;
+  }
+
+  .animated-title-02 {
+    animation: text-appear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 70%;
   }
 
   .toast-container {
@@ -408,12 +586,16 @@ textarea {
     font-size: 16px;
   }
 
-  .contact-form {
-    padding: 20px;
-    width: 600px;
+  .contact-section .contact-content-02 {
+    justify-content: center;
   }
 
-  .contact-form-title {
+  .contact-form-container {
+    width: 500px;
+    padding: 20px;
+  }
+
+  .contact-title {
     font-size: 24px;
   }
 
@@ -422,12 +604,32 @@ textarea {
     font-size: 16px;
   }
 
-  .contact-section .contact-content-02 {
-    justify-content: center;
+  .info-container {
+    align-items: center;
   }
 
-  .info {
-    width: 600px;
+  .sub-info {
+    width: 500px;
+    padding: 20px;
+    animation: text-appear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 30%;
+  }
+
+  .social-info {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    gap: 20px;
+  }
+
+  .social-info .social-subinfo {
+    width: 250px;
+    padding: 20px;
+  }
+
+  .animated-title-02 {
+    animation: text-appear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 70%;
   }
 
   .toast-container {
@@ -454,12 +656,16 @@ textarea {
     font-size: 16px;
   }
 
-  .contact-form {
-    padding: 20px;
-    width: 600px;
+  .contact-section .contact-content-02 {
+    justify-content: center;
   }
 
-  .contact-form-title {
+  .contact-form-container {
+    width: 500px;
+    padding: 20px;
+  }
+
+  .contact-title {
     font-size: 24px;
   }
 
@@ -468,12 +674,32 @@ textarea {
     font-size: 16px;
   }
 
-  .contact-section .contact-content-02 {
-    justify-content: center;
+  .info-container {
+    align-items: center;
   }
 
-  .info {
-    width: 600px;
+  .sub-info {
+    width: 500px;
+    padding: 20px;
+    animation: text-appear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 30%;
+  }
+
+  .social-info {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    gap: 20px;
+  }
+
+  .social-info .social-subinfo {
+    width: 250px;
+    padding: 20px;
+  }
+
+  .animated-title-02 {
+    animation: text-appear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 70%;
   }
 
   .toast-container {
@@ -482,51 +708,35 @@ textarea {
 }
 
 @media (min-width: 751px) and (max-width: 880px) {
-  .contact-form {
-    width: 340px;
-  }
-
-  .info {
-    width: 340px;
-  }
-}
-
-@media (min-width: 881px) and (max-width: 940px) {
-  .contact-form {
-    width: 400px;
-  }
-
-  .info {
-    width: 400px;
-  }
-}
-
-@media (min-width: 941px) and (max-width: 1010px) {
-  .contact-form {
-    width: 420px;
-  }
-
-  .info {
-    width: 420px;
-  }
-}
-
-@media (min-width: 1011px) and (max-width: 1100px) {
-  .contact-form {
-    width: 440px;
-  }
-
-  .info {
-    width: 440px;
-  }
-}
-
-@media (min-width: 1101px) and (max-width: 1270px) {
-  .contact-form {
+  .contact-form-container {
     width: 500px;
   }
 
-  .info {
+  .info-container {
+    align-items: center;
+  }
+
+  .sub-info {
     width: 500px;
+    padding: 20px;
+    animation: text-appear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 30%;
+  }
+
+  .social-info {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    gap: 20px;
+  }
+
+  .social-info .social-subinfo {
+    width: 250px;
+    padding: 20px;
+  }
+
+  .animated-title-02 {
+    animation: text-appear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 70%;
   }
 }
