@@ -46,7 +46,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
   flex-shrink: 1;
-  gap: 30px;
+  gap: 20px;
 }
 
 .services-card {
@@ -327,12 +327,6 @@ body {
     animation-range: entry 20% cover 70%;
   }
 
-  #third-card {
-    animation: text-appear both;
-    animation-timeline: view();
-    animation-range: entry 20% cover 70%;
-  }
-
   .tag {
     left: 30%;
   }
@@ -389,12 +383,6 @@ body {
   }
 
   #second-card {
-    animation: text-appear both;
-    animation-timeline: view();
-    animation-range: entry 20% cover 70%;
-  }
-
-  #third-card {
     animation: text-appear both;
     animation-timeline: view();
     animation-range: entry 20% cover 70%;
@@ -461,12 +449,6 @@ body {
     animation-range: entry 20% cover 70%;
   }
 
-  #third-card {
-    animation: text-appear both;
-    animation-timeline: view();
-    animation-range: entry 20% cover 70%;
-  }
-
   .tag {
     left: 34%;
   }
@@ -528,12 +510,6 @@ body {
     animation-range: entry 20% cover 70%;
   }
 
-  #third-card {
-    animation: text-appear both;
-    animation-timeline: view();
-    animation-range: entry 20% cover 70%;
-  }
-
   .tag {
     left: 35%;
   }
@@ -586,16 +562,10 @@ body {
   }
 
   .services-card {
-    width: 500px;
+    width: 560px;
   }
 
   #second-card {
-    animation: text-appear both;
-    animation-timeline: view();
-    animation-range: entry 20% cover 70%;
-  }
-
-  #third-card {
     animation: text-appear both;
     animation-timeline: view();
     animation-range: entry 20% cover 70%;
@@ -625,19 +595,13 @@ body {
   }
 }
 
-@media (min-width: 701px) and (max-width: 1049px) {
+@media (min-width: 701px) and (max-width: 1039px) {
   #second-card {
     animation: text-appear both;
     animation-timeline: view();
     animation-range: entry 20% cover 70%;
   }
 
-  #third-card {
-    animation: text-appear both;
-    animation-timeline: view();
-    animation-range: entry 20% cover 70%;
-  }
-
   .services-layout-02 {
     animation: none;
   }
@@ -649,12 +613,7 @@ body {
   }
 }
 
-@media (min-width: 1050px) and (max-width: 1310px) {
-  #third-card {
-    animation: text-appear both;
-    animation-timeline: view();
-    animation-range: entry 20% cover 70%;
-  }
+@media (min-width: 1040px) and (max-width: 1310px) {
 
   .services-layout-02 {
     animation: none;
@@ -665,12 +624,4 @@ body {
     animation-timeline: view();
     animation-range: entry 20% cover 70%;
   }
-}
-
-@media  (min-width: 1311px) and (max-width: 1579px){
-  #third-card{
-     animation: text-appear both;
-     animation-timeline: view();
-     animation-range: entry 20% cover 70%;
-   }
 }
