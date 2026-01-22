@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <title>Projects | Abdullah Rehmani</title>
     <meta
       name="description"
-      content="Explore web development projects by Abdullah Rehmani — including My-Virtual-Assistant App, Weather App, Calculator App, and more. Built with HTML, CSS, Tailwind CSS, and JavaScript to deliver responsive and interactive user experiences."
+      content="Explore web development projects by Abdullah Rehmani — including My-Virtual-Assistant App, Weather App, Calculator App, and more. Built with HTML, CSS, Tailwind CSS, JavaScript and React to deliver responsive and interactive user experiences."
     />
 
     <meta
@@ -44,14 +44,14 @@
   <body>
     <header id="header" class="header">
       <div id="logo">
-        <img class="logo-img" src="images/logo.png" alt="" />
+        <img class="logo-img" src="images/logo.png" alt="logo" loading="lazy" />
         <a class="title-container" href="index.html">
           <h1 id="title">Abdullah Rehmani</h1>
           <h3 id="sub-title">Frontend Developer</h3>
         </a>
       </div>
 
-       <div class="links">
+      <div class="links">
         <a href="index.html" class="tooltip">
           <i class="fa-solid fa-house"></i>
           <span>Home</span>
@@ -99,12 +99,24 @@
       </div>
 
       <div class="project-layout">
-        <div class="project-card">
-          <a
-            href="https://abdullah-rehmani-222.github.io/My-Virtual-Assistant/"
-            target="_blank"
-            ><img class="card-image" src="images/jarvis.jpg" alt=""
-          /></a>
+        <div class="project-card is-loading">
+          <div class="skeleton-content">
+            <div class="skeleton skeleton-image"></div>
+          </div>
+          <div class="real-content">
+            <a
+              href="https://abdullah-rehmani-222.github.io/My-Virtual-Assistant/"
+              target="_blank"
+            >
+              <img
+                class="card-image"
+                src="images/jarvis.jpg"
+                alt="project-image"
+                loading="lazy"
+              />
+            </a>
+          </div>
+
           <div class="card-content">
             <div class="card-title-container">
               <h3 class="card-title">My Virual Assistant</h3>
@@ -114,36 +126,55 @@
             </div>
             <div class="card-skills">
               <span>
-                <img src="images/html-5.png" alt="" />
+                <img src="images/html-5.png" alt="skill-image" loading="lazy" />
                 <p>HTML5</p></span
               >
               <span>
-                <img src="images/css-3.png" alt="" />
+                <img src="images/css-3.png" alt="skill-image" loading="lazy" />
                 <p>CSS3</p></span
               >
               <span>
-                <img src="images/javascript.png" alt="" />
+                <img
+                  src="images/javascript.png"
+                  alt="skill-image"
+                  loading="lazy"
+                />
                 <p>JavaScript</p></span
               >
               <span>
-                <img src="images/github.png" alt="" />
+                <img src="images/github.png" alt="skill-image" loading="lazy" />
                 <p>Github</p></span
               >
               <span>
-                <img src="images/visual-code.png" alt="" />
+                <img
+                  src="images/visual-code.png"
+                  alt="skill-image"
+                  loading="lazy"
+                />
                 <p>VS Code</p></span
               >
-              
             </div>
           </div>
         </div>
 
-        <div class="project-card">
-          <a
-            href="https://abdullah-rehmani-222.github.io/WEATHER-APP/"
-            target="_blank"
-            ><img class="card-image" src="images/myweatherapp.jpg" alt=""
-          /></a>
+        <div class="project-card is-loading">
+          <div class="skeleton-content">
+            <div class="skeleton skeleton-image"></div>
+          </div>
+          <div class="real-content">
+            <a
+              href="https://abdullah-rehmani-222.github.io/WEATHER-APP/"
+              target="_blank"
+            >
+              <img
+                class="card-image"
+                src="images/myweatherapp.jpg"
+                alt="project-image"
+                loading="lazy"
+              />
+            </a>
+          </div>
+
           <div class="card-content">
             <div class="card-title-container">
               <h3 class="card-title">Weather App</h3>
@@ -151,36 +182,53 @@
             </div>
             <div class="card-skills">
               <span>
-                <img src="images/html-5.png" alt="" />
+                <img src="images/html-5.png" alt="skill-image" loading="lazy" />
                 <p>HTML5</p></span
               >
               <span>
-                <img src="images/css-3.png" alt="" />
+                <img src="images/css-3.png" alt="skill-image" loading="lazy" />
                 <p>CSS3</p></span
               >
               <span>
-                <img src="images/javascript.png" alt="" />
+                <img
+                  src="images/javascript.png"
+                  alt="skill-image"
+                  loading="lazy"
+                />
                 <p>JavaScript</p></span
               >
               <span>
-                <img src="images/github.png" alt="" />
+                <img src="images/github.png" alt="skill-image" loading="lazy" />
                 <p>Github</p></span
               >
               <span>
-                <img src="images/visual-code.png" alt="" />
+                <img
+                  src="images/visual-code.png"
+                  alt="skill-image"
+                  loading="lazy"
+                />
                 <p>VS Code</p></span
               >
-              
             </div>
           </div>
         </div>
 
-        <div class="project-card">
-          <a
-            href="https://abdullah-rehmani-222.github.io/CALCULATOR-PROJECT/"
-            target="_blank"
-            ><img class="card-image" src="images/mycalculatorapp.jpg" alt=""
-          /></a>
+        <div class="project-card is-loading">
+          <div class="skeleton-content">
+            <div class="skeleton skeleton-image"></div>
+          </div>
+          <div class="real-content">
+            <a
+              href="https://abdullah-rehmani-222.github.io/CALCULATOR-PROJECT/"
+              target="_blank"
+              ><img
+                class="card-image"
+                src="images/mycalculatorapp.jpg"
+                alt="project-image"
+                loading="lazy"
+            /></a>
+          </div>
+
           <div class="card-content">
             <div class="card-title-container">
               <h3 class="card-title">Calculator</h3>
@@ -188,75 +236,108 @@
             </div>
             <div class="card-skills">
               <span>
-                <img src="images/html-5.png" alt="" />
+                <img src="images/html-5.png" alt="skill-image" loading="lazy" />
                 <p>HTML5</p></span
               >
               <span>
-                <img src="images/css-3.png" alt="" />
+                <img src="images/css-3.png" alt="skill-image" loading="lazy" />
                 <p>CSS3</p></span
               >
               <span>
-                <img src="images/javascript.png" alt="" />
+                <img
+                  src="images/javascript.png"
+                  alt="skill-image"
+                  loading="lazy"
+                />
                 <p>JavaScript</p></span
               >
               <span>
-                <img src="images/github.png" alt="" />
+                <img src="images/github.png" alt="skill-image" loading="lazy" />
                 <p>Github</p></span
               >
               <span>
-                <img src="images/visual-code.png" alt="" />
+                <img
+                  src="images/visual-code.png"
+                  alt="skill-image"
+                  loading="lazy"
+                />
                 <p>VS Code</p></span
               >
-              
             </div>
           </div>
         </div>
 
-        <div class="project-card animated-card">
-          <a
+        <div class="project-card is-loading animated-card">
+
+          <div class="skeleton-content">
+            <div class="skeleton skeleton-image"></div>
+          </div>
+          <div class="real-content">
+         <a
             href="https://abdullah-rehmani-222.github.io/Responsive-Login-Form/"
             target="_blank"
-            ><img class="card-image" src="images/responsiveloginform.jpg" alt=""
+            ><img
+              class="card-image"
+              src="images/responsiveloginform.jpg"
+              alt="project-image"
+              loading="lazy"
           /></a>
+          </div>
+          
           <div class="card-content">
             <div class="card-title-container">
               <h3 class="card-title">Login Form</h3>
-              <p class="card-description">
-                This is my Responsive Login Form.
-              </p>
+              <p class="card-description">This is my Responsive Login Form.</p>
             </div>
             <div class="card-skills">
               <span>
-                <img src="images/html-5.png" alt="" />
+                <img src="images/html-5.png" alt="skill-image" loading="lazy" />
                 <p>HTML5</p></span
               >
               <span>
-                <img src="images/css-3.png" alt="" />
+                <img src="images/css-3.png" alt="skill-image" loading="lazy" />
                 <p>CSS3</p></span
               >
               <span>
-                <img src="images/javascript.png" alt="" />
+                <img
+                  src="images/javascript.png"
+                  alt="skill-image"
+                  loading="lazy"
+                />
                 <p>JavaScript</p></span
               >
               <span>
-                <img src="images/github.png" alt="" />
+                <img src="images/github.png" alt="skill-image" loading="lazy" />
                 <p>Github</p></span
               >
               <span>
-                <img src="images/visual-code.png" alt="" />
+                <img
+                  src="images/visual-code.png"
+                  alt="skill-image"
+                  loading="lazy"
+                />
                 <p>VS Code</p></span
               >
-              
             </div>
           </div>
         </div>
 
-        <div class="project-card animated-card">
-          <a
-            href="https://abdullah-rehmani-222.github.io/Todo-List-App/"
-            target="_blank"
-            ><img class="card-image" src="images/todolistapp.jpg" alt=""
-          /></a>
+        <div class="project-card is-loading animated-card">
+            <div class="skeleton-content">
+            <div class="skeleton skeleton-image"></div>
+          </div>
+          <div class="real-content">
+            <a
+              href="https://abdullah-rehmani-222.github.io/Todo-List-App/"
+              target="_blank"
+              ><img
+                class="card-image"
+                src="images/todolistapp.jpg"
+                alt="project-image"
+                loading="lazy"
+            /></a>
+          </div>
+
           <div class="card-content">
             <div class="card-title-container">
               <h3 class="card-title">To-do List App</h3>
@@ -266,36 +347,53 @@
             </div>
             <div class="card-skills">
               <span>
-                <img src="images/html-5.png" alt="" />
+                <img src="images/html-5.png" alt="skill-image" loading="lazy" />
                 <p>HTML5</p></span
               >
               <span>
-                <img src="images/css-3.png" alt="" />
+                <img src="images/css-3.png" alt="skill-image" loading="lazy" />
                 <p>CSS3</p></span
               >
               <span>
-                <img src="images/javascript.png" alt="" />
+                <img
+                  src="images/javascript.png"
+                  alt="skill-image"
+                  loading="lazy"
+                />
                 <p>JavaScript</p></span
               >
               <span>
-                <img src="images/github.png" alt="" />
+                <img src="images/github.png" alt="skill-image" loading="lazy" />
                 <p>Github</p></span
               >
               <span>
-                <img src="images/visual-code.png" alt="" />
+                <img
+                  src="images/visual-code.png"
+                  alt="skill-image"
+                  loading="lazy"
+                />
                 <p>VS Code</p></span
               >
-              
             </div>
           </div>
         </div>
 
-        <div class="project-card animated-card">
-          <a
-            href="https://abdullah-rehmani-222.github.io/Tic-Tac-Toe-App/"
-            target="_blank"
-            ><img class="card-image" src="images/tic-tac-toe-app.jpg" alt=""
-          /></a>
+        <div class="project-card is-loading animated-card">
+           <div class="skeleton-content">
+            <div class="skeleton skeleton-image"></div>
+          </div>
+          <div class="real-content">
+            <a
+              href="https://abdullah-rehmani-222.github.io/Tic-Tac-Toe-App/"
+              target="_blank"
+              ><img
+                class="card-image"
+                src="images/tic-tac-toe-app.jpg"
+                alt="project-image"
+                loading="lazy"
+            /></a>
+          </div>
+
           <div class="card-content">
             <div class="card-title-container">
               <h3 class="card-title">Tic Tac Toe App</h3>
@@ -305,33 +403,44 @@
             </div>
             <div class="card-skills">
               <span>
-                <img src="images/react.png" alt="" />
+                <img src="images/react.png" alt="skill-image" loading="lazy" />
                 <p>React</p></span
               >
               <span>
-                <img src="images/tailwind-css.png" alt="" />
+                <img
+                  src="images/tailwind-css.png"
+                  alt="skill-image"
+                  loading="lazy"
+                />
                 <p>Tailwind CSS</p></span
               >
               <span>
-                <img src="images/github.png" alt="" />
+                <img src="images/github.png" alt="skill-image" loading="lazy" />
                 <p>Github</p></span
               >
               <span>
-                <img src="images/visual-code.png" alt="" />
+                <img
+                  src="images/visual-code.png"
+                  alt="skill-image"
+                  loading="lazy"
+                />
                 <p>VS Code</p></span
               >
-              
             </div>
           </div>
         </div>
-
       </div>
     </section>
 
     <div class="mobile-menu" id="mobileMenu">
       <div id="mobile-logo-container">
         <a class="mobile-logo" href="index.html">
-          <img class="logo-img" src="images/logo.png" alt="" />
+          <img
+            class="logo-img"
+            src="images/logo.png"
+            alt="mobile-menu-logo"
+            loading="lazy"
+          />
           <div id="title-container">
             <h1 id="title">Abdullah Rehmani</h1>
             <h3 id="sub-title">Frontend Developer</h3>

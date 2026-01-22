@@ -4,4 +4,10 @@ function toggleMobileMenu() {
   document.getElementById("menuIcon").classList.toggle("active");
 }
 
+const cards = document.querySelectorAll(".project-card");
 
+setTimeout(() => {
+  cards.forEach((card) => {
+    card.classList.remove("is-loading");
+  });
+}, 500);

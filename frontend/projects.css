@@ -53,6 +53,7 @@ body {
 }
 
 .project-layout .project-card {
+  padding: 20px;
   /* background-color: #fff7f71e; */
   background-color: #fff7f715;
   /* border: 1px solid rgba(255, 255, 255, 0.178);  */
@@ -88,12 +89,12 @@ body {
 .project-card .card-image {
   height: 200px;
   width: 100%;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-radius: 10px;
+  /* border-top-left-radius: 20px;
+  border-top-right-radius: 20px; */
 }
 
 .project-card .card-content {
-  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: start;
@@ -102,6 +103,8 @@ body {
 }
 
 .card-content .card-title-container {
+  padding-left: 10px;
+  padding-top: 10px;
   display: flex;
   flex-direction: column;
   gap: 2px;
@@ -145,6 +148,49 @@ body {
   font-size: 12px;
 }
 
+.skeleton-content{
+  height: 200px;
+  width: 100%;
+}
+
+.project-card.is-loading  .real-content,
+.project-card:not(.is-loading) .skeleton-content{
+  display: none;
+}
+
+
+.project-card:not(.is-loading) .real-content{
+  display: block;
+  animation: fadein 0.5s ease-in;
+}
+
+@keyframes fadein {
+  from {
+   opacity: 0;
+  }
+  to {
+   opacity: 1;
+  }
+}
+
+.skeleton-image {
+  height: 100%;
+  width: 100%;
+}
+
+.skeleton {
+  background: linear-gradient(110deg, #797171 8%, #cec1c1 18%, #797171 20%);
+  border-radius: 6px;
+  animation: shine 1.5s linear infinite;
+  background-size: 200% 100%;
+}
+
+@keyframes shine {
+  to{
+    background-position-x: -200%;
+  }
+}
+
 @media (max-width: 700px) {
   .project-section {
     padding: 120px 10px;
@@ -167,7 +213,6 @@ body {
   }
 
   .project-card .card-content {
-    padding: 20px;
     gap: 10px;
   }
 
