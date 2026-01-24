@@ -208,6 +208,10 @@ body {
     font-size: 16px;
   }
 
+  .project-layout .project-card:nth-child(5) {
+  height: 445px;
+  }
+
   .project-layout .project-card:hover {
     transform: scale(1);
   }
