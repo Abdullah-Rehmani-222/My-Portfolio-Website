@@ -211,13 +211,13 @@ body {
   .animated-card {
     animation: text-appear both;
     animation-timeline: view();
-    animation-range: entry 20% cover 30%;
+    animation-range: entry 0% cover 40%;
   }
 
   @keyframes text-appear {
     from {
       opacity: 0;
-      transform: translateY(40px);
+      transform: translateY(15px);
     }
     to {
       opacity: 1;

@@ -68,7 +68,8 @@ body {
 .comming-soon-card {
   position: relative;
   z-index: 99;
-  background-color: #00000096;
+  /* background-color: #00000096; */
+  background-color: #01000f96;
 }
 
 .tag {
@@ -87,7 +88,7 @@ body {
 
 #first-card {
   z-index: 0;
-  opacity: 0.5;
+  opacity: 0.4;
 }
 
 #first-card a {
@@ -188,13 +189,13 @@ body {
 
   animation: text-appear both;
   animation-timeline: view();
-  animation-range: entry 20% cover 70%;
+  animation-range: entry 0% cover 50%;
 }
 
 @keyframes text-appear {
   from {
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(15px);
   }
   to {
     opacity: 1;
@@ -223,7 +224,7 @@ body {
   gap: 30px;
   animation: text-appear both;
   animation-timeline: view();
-  animation-range: entry 20% cover 50%;
+  animation-range: entry 0% cover 50%;
 }
 
 .services-layout-02 .services-card-02 {
@@ -324,13 +325,13 @@ body {
   #second-card {
     animation: text-appear both;
     animation-timeline: view();
-    animation-range: entry 20% cover 70%;
+    animation-range: entry 0% cover 40%;
   }
 
   #third-card {
     animation: text-appear both;
     animation-timeline: view();
-    animation-range: entry 20% cover 70%;
+    animation-range: entry 0% cover 40%;
   }
 
   .tag {
@@ -357,7 +358,7 @@ body {
   .services-layout-02 .animated-card {
     animation: text-appear both;
     animation-timeline: view();
-    animation-range: entry 20% cover 70%;
+    animation-range: entry 0% cover 40%;
   }
 }
 
@@ -391,13 +392,13 @@ body {
   #second-card {
     animation: text-appear both;
     animation-timeline: view();
-    animation-range: entry 20% cover 70%;
+    animation-range: entry 0% cover 40%;
   }
 
   #third-card {
     animation: text-appear both;
     animation-timeline: view();
-    animation-range: entry 20% cover 70%;
+    animation-range: entry 0% cover 40%;
   }
 
   .tag {
@@ -424,7 +425,7 @@ body {
   .services-layout-02 .animated-card {
     animation: text-appear both;
     animation-timeline: view();
-    animation-range: entry 20% cover 70%;
+    animation-range: entry 0% cover 40%;
   }
 }
 
@@ -458,13 +459,13 @@ body {
   #second-card {
     animation: text-appear both;
     animation-timeline: view();
-    animation-range: entry 20% cover 70%;
+    animation-range: entry 0% cover 40%;
   }
 
   #third-card {
     animation: text-appear both;
     animation-timeline: view();
-    animation-range: entry 20% cover 70%;
+    animation-range: entry 0% cover 40%;
   }
 
   .tag {
@@ -491,7 +492,7 @@ body {
   .services-layout-02 .animated-card {
     animation: text-appear both;
     animation-timeline: view();
-    animation-range: entry 20% cover 70%;
+    animation-range: entry 0% cover 40%;
   }
 }
 
@@ -525,13 +526,13 @@ body {
   #second-card {
     animation: text-appear both;
     animation-timeline: view();
-    animation-range: entry 20% cover 70%;
+    animation-range: entry 0% cover 40%;
   }
 
   #third-card {
     animation: text-appear both;
     animation-timeline: view();
-    animation-range: entry 20% cover 70%;
+    animation-range: entry 0% cover 40%;
   }
 
   .tag {
@@ -558,7 +559,7 @@ body {
   .services-layout-02 .animated-card {
     animation: text-appear both;
     animation-timeline: view();
-    animation-range: entry 20% cover 70%;
+    animation-range: entry 0% cover 40%;
   }
 }
 
@@ -592,13 +593,13 @@ body {
   #second-card {
     animation: text-appear both;
     animation-timeline: view();
-    animation-range: entry 20% cover 70%;
+    animation-range: entry 0% cover 40%;
   }
 
   #third-card {
     animation: text-appear both;
     animation-timeline: view();
-    animation-range: entry 20% cover 70%;
+    animation-range: entry 0% cover 40%;
   }
 
   .services-content-02 {
@@ -621,7 +622,7 @@ body {
   .services-layout-02 .animated-card {
     animation: text-appear both;
     animation-timeline: view();
-    animation-range: entry 20% cover 70%;
+    animation-range: entry 0% cover 40%;
   }
 }
 
@@ -629,13 +630,13 @@ body {
   #second-card {
     animation: text-appear both;
     animation-timeline: view();
-    animation-range: entry 20% cover 70%;
+    animation-range: entry 0% cover 40%;
   }
 
   #third-card {
     animation: text-appear both;
     animation-timeline: view();
-    animation-range: entry 20% cover 70%;
+    animation-range: entry 0% cover 40%;
   }
 
   .services-layout-02 {
@@ -645,7 +646,7 @@ body {
   .services-layout-02 .animated-card {
     animation: text-appear both;
     animation-timeline: view();
-    animation-range: entry 20% cover 70%;
+    animation-range: entry 0% cover 40%;
   }
 }
 
@@ -653,7 +654,7 @@ body {
   #third-card {
     animation: text-appear both;
     animation-timeline: view();
-    animation-range: entry 20% cover 70%;
+    animation-range: entry 0% cover 40%;
   }
 
   .services-layout-02 {
@@ -663,7 +664,7 @@ body {
   .services-layout-02 .animated-card {
     animation: text-appear both;
     animation-timeline: view();
-    animation-range: entry 20% cover 70%;
+    animation-range: entry 0% cover 40%;
   }
 }
 
@@ -671,6 +672,6 @@ body {
   #third-card {
     animation: text-appear both;
     animation-timeline: view();
-    animation-range: entry 20% cover 70%;
+    animation-range: entry 0% cover 40%;
   }
 }

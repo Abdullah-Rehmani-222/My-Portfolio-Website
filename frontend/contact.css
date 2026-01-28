@@ -170,13 +170,13 @@ textarea {
 .animated-card {
   animation: text-appear both;
   animation-timeline: view();
-  animation-range: entry 20% cover 30%;
+  animation-range: entry 0% cover 40%;
 }
 
 @keyframes text-appear {
   from {
     opacity: 0;
-    transform: translateY(40px);
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
@@ -211,7 +211,7 @@ textarea {
 .animated-title {
   animation: text-appear both;
   animation-timeline: view();
-  animation-range: entry 20% cover 70%;
+  animation-range: entry 0% cover 40%;
 }
 
 .social-info {
@@ -222,7 +222,7 @@ textarea {
   align-items: center;
   animation: fadeup both;
   animation-timeline: view();
-  animation-range: entry 20% cover 40%;
+  animation-range: entry 0% cover 40%;
 }
 
 @keyframes fadeup {
@@ -390,7 +390,7 @@ textarea {
     padding: 20px;
     animation: text-appear both;
     animation-timeline: view();
-    animation-range: entry 20% cover 30%;
+    animation-range: entry 0% cover 40%;
   }
 
   .social-info {
@@ -404,13 +404,13 @@ textarea {
     padding: 20px;
     animation: text-appear both;
     animation-timeline: view();
-    animation-range: entry 20% cover 50%;
+    animation-range: entry 0% cover 40%;
   }
 
   .animated-title-02 {
     animation: text-appear both;
     animation-timeline: view();
-    animation-range: entry 20% cover 70%;
+    animation-range: entry 0% cover 40%;
   }
 
   .toast-container {
@@ -465,7 +465,7 @@ textarea {
     padding: 20px;
     animation: text-appear both;
     animation-timeline: view();
-    animation-range: entry 20% cover 30%;
+    animation-range: entry 0% cover 40%;
   }
 
   .social-info {
@@ -479,13 +479,13 @@ textarea {
     padding: 20px;
     animation: text-appear both;
     animation-timeline: view();
-    animation-range: entry 20% cover 50%;
+    animation-range: entry 0% cover 40%;
   }
 
   .animated-title-02 {
     animation: text-appear both;
     animation-timeline: view();
-    animation-range: entry 20% cover 70%;
+    animation-range: entry 0% cover 40%;
   }
 
   .toast-container {
@@ -539,7 +539,7 @@ textarea {
     padding: 20px;
     animation: text-appear both;
     animation-timeline: view();
-    animation-range: entry 20% cover 30%;
+    animation-range: entry 0% cover 40%;
   }
 
   .social-info {
@@ -553,13 +553,13 @@ textarea {
     padding: 20px;
     animation: text-appear both;
     animation-timeline: view();
-    animation-range: entry 20% cover 50%;
+    animation-range: entry 0% cover 40%;
   }
 
   .animated-title-02 {
     animation: text-appear both;
     animation-timeline: view();
-    animation-range: entry 20% cover 70%;
+    animation-range: entry 0% cover 40%;
   }
 
   .toast-container {
@@ -613,7 +613,7 @@ textarea {
     padding: 20px;
     animation: text-appear both;
     animation-timeline: view();
-    animation-range: entry 20% cover 30%;
+    animation-range: entry 0% cover 40%;
   }
 
   .social-info {
@@ -629,7 +629,7 @@ textarea {
   .animated-title-02 {
     animation: text-appear both;
     animation-timeline: view();
-    animation-range: entry 20% cover 70%;
+    animation-range: entry 0% cover 40%;
   }
 
   .toast-container {
@@ -683,7 +683,7 @@ textarea {
     padding: 20px;
     animation: text-appear both;
     animation-timeline: view();
-    animation-range: entry 20% cover 30%;
+    animation-range: entry 0% cover 40%;
   }
 
   .social-info {
@@ -699,7 +699,7 @@ textarea {
   .animated-title-02 {
     animation: text-appear both;
     animation-timeline: view();
-    animation-range: entry 20% cover 70%;
+    animation-range: entry 0% cover 40%;
   }
 
   .toast-container {
@@ -721,7 +721,7 @@ textarea {
     padding: 20px;
     animation: text-appear both;
     animation-timeline: view();
-    animation-range: entry 20% cover 30%;
+    animation-range: entry 0% cover 40%;
   }
 
   .social-info {
@@ -737,6 +737,6 @@ textarea {
   .animated-title-02 {
     animation: text-appear both;
     animation-timeline: view();
-    animation-range: entry 20% cover 70%;
+    animation-range: entry 0% cover 40%;
   }
 }
