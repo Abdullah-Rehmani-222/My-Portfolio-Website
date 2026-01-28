@@ -53,15 +53,12 @@ body {
 }
 
 .project-layout .project-card {
-  padding: 20px;
-  /* background-color: #fff7f71e; */
+  /* padding: 20px; */
   background-color: #fff7f715;
-  /* border: 1px solid rgba(255, 255, 255, 0.178);  */
-  border-radius: 20px;
-  cursor: default;
+  border-radius: 12px;
   height: 400px;
   width: 400px;
-  transition: transform 0.5s ease;
+  /* transition: transform 0.5s ease; */
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -82,16 +79,18 @@ body {
   }
 }
 
-.project-layout .project-card:hover {
-  transform: scale(1.1);
-}
-
 .project-card .card-image {
   height: 200px;
   width: 100%;
-  border-radius: 10px;
-  /* border-top-left-radius: 20px;
-  border-top-right-radius: 20px; */
+  /* border-radius: 10px; */
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+}
+
+.project-card .card-image:hover {
+  opacity: 0.7;
 }
 
 .project-card .card-content {
@@ -100,6 +99,8 @@ body {
   align-items: start;
   flex-direction: column;
   gap: 15px;
+  padding-top: 10px;
+  padding-left: 10px;
 }
 
 .card-content .card-title-container {
@@ -123,10 +124,10 @@ body {
 .card-content .card-skills {
   display: flex;
   justify-content: start;
-  align-items: center;
+  align-items: start;
   flex-wrap: wrap;
   padding-left: 10px;
-  gap: 8px;
+  gap: 10px;
 }
 
 .card-skills span {
@@ -137,6 +138,7 @@ body {
   padding: 8px;
   border: 1px solid #ffffff0d;
   border-radius: 8px;
+  cursor: default;
 }
 
 .card-skills span img {
@@ -148,28 +150,27 @@ body {
   font-size: 12px;
 }
 
-.skeleton-content{
+.skeleton-content {
   height: 200px;
   width: 100%;
 }
 
-.project-card.is-loading  .real-content,
-.project-card:not(.is-loading) .skeleton-content{
+.project-card.is-loading .real-content,
+.project-card:not(.is-loading) .skeleton-content {
   display: none;
 }
 
-
-.project-card:not(.is-loading) .real-content{
+.project-card:not(.is-loading) .real-content {
   display: block;
   animation: fadein 0.5s ease-in;
 }
 
 @keyframes fadein {
   from {
-   opacity: 0;
+    opacity: 0;
   }
   to {
-   opacity: 1;
+    opacity: 1;
   }
 }
 
@@ -186,7 +187,7 @@ body {
 }
 
 @keyframes shine {
-  to{
+  to {
     background-position-x: -200%;
   }
 }
@@ -208,9 +209,9 @@ body {
     font-size: 16px;
   }
 
-  .project-layout .project-card:nth-child(5) {
+  /* .project-layout .project-card:nth-child(5) {
   height: 445px;
-  }
+  } */
 
   .project-layout .project-card:hover {
     transform: scale(1);
